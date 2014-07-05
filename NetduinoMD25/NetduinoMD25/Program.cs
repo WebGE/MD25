@@ -10,7 +10,7 @@ namespace NetduinoMD25
     public class Program
     {
         public static void Main()
-        {
+        {   // http://webge.github.io/MD25/
             // Programme de test de la carte MD25
             // Création d'un objet MotorControl (carte MD25)
             // avec l'adresse 0x58 et la fréquence de bus F = 100kHz
