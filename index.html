@@ -29,46 +29,188 @@
     </div>
 
     <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
+     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+        <h5>
+<a name="module-de-commande-de-moteurs-md25" class="anchor" href="#module-de-commande-de-moteurs-md25"><span class="octicon octicon-link"></span></a>Module de commande de moteurs "MD25"</h5>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<hr><p>Destinée à être commandée par un microcontrôleur au moyen d'une liaison série (niveau logique 0 - 5 V) ou via un <strong>bus I2C™</strong>, cette platine électronique intègre un <strong>double pont en "H"</strong> permettant le pilotage indépendant de <strong>2 moteurs à courant continu avec encodeur</strong> (consommation: 2,5 A max. par moteur).<br>
+Des ordres simples permettent de définir le sens de rotation ainsi que la vitesse des moteurs, de lire les informations en provenance des encodeurs, de lire les valeurs de la tension et du courant consommé par les moteurs, de connaître leur vitesse de rotation, de définir les accélérations, etc...</p>
+<p><img src="http://www.lextronic.fr/imagelib/48/md25connection.jpg"></p>
+<ul>
+<li>Alimentation nécessaire: 12 Vcc (un régulateur 5 Vcc intégré délivre 300 mA pour l’électronique de commande externe).</li>
+<li>Plusieurs platines peuvent être pilotées en même temps via un bus I2C™</li>
+<li>Dimensions: 70 x 60 x 25 mm.</li>
+<li>Distributeur : <a href="http://www.lextronic.fr/P3104-module-de-commande-de-moteur-md25.html">LEXTRONIC</a>
+</li>
+</ul>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+<p><a href="http://www.pishrobot.com/files/products/datasheets/md25.pdf" target="_blank">Documentation de la carte MD25</a></p>
+<hr><h5>
+<a name="module-panda" class="anchor" href="#module-panda"><span class="octicon octicon-link"></span></a>Module Panda</h5>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+<hr><p>Se présentant sous la forme d'une platine architecturée sur la base d'un puissant processeur ARM7™ cadencé à 72 MHz (dont le brochage est compatible avec les "célèbres"Arduino™), la platine FEZ "PANDA" est probablement le système de développement embarqué (capable d'être programmé sous envi-ronnement Microsoft™ .NET Micro Framework™) parmi le plus petit et le plus économique du marché.</p>
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+<p><img src="http://www.lextronic.fr/imagelib/84/panda.jpg" alt="Panda"></p>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+<hr><h5>
+<a name="classe-motorcontrold2x" class="anchor" href="#classe-motorcontrold2x"><span class="octicon octicon-link"></span></a>Classe MotorControlMD2x</h5>
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+<hr><p><strong>Constructeur</strong></p>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+<table>
+<tr>
+<td></td>
+<td><strong>Syntaxe</strong></td>
+<td><strong>Description</strong></td>
+</tr>
+<tr>
+<td><img src="http://www.jetbrains.com/resharper/webhelp50/images/general_constructor_VS.png"></td>
+<td><strong>MotorControlMD2x()</strong></td>
+<td>Initialise un objet "carte MD23/MD25". <br> L'addresse sur le bus I2C = 0x58. La fréquence de l'horloge est fixée à F = 100kHz </td>
+</tr>
+<tr>
+<td><img src="http://www.jetbrains.com/resharper/webhelp50/images/general_constructor_VS.png"></td>
+<td>
+<strong>MotorControlMD2x</strong>(<strong>byte</strong> <em>I2C_Add_7bits</em>)</td>
+<td>Initialise un objet "carte MD23/MD25". I2C_Add_7bits est à définir dans l'intervalle [0x58,0x5F]. La fréquence de l'horloge est fixée à F = 100kHz.</td>
+</tr>
+<tr>
+<td><img src="http://www.jetbrains.com/resharper/webhelp50/images/general_constructor_VS.png"></td>
+<td>
+<strong>MotorControlMD2x</strong>(<strong>byte</strong> <em>I2C_Add_7bits</em>, <strong>UInt16</strong> <em>Frequency</em>)</td>
+<td>Initialise un objet "carte MD23/MD25" I2C_Add_7bits est à définir dans l'intervalle [0x58,0x5F]. Frequency est à définir dans l'intervalle [100kHz,400kHz] </td>
+</tr>
+</table><p><strong>Enumération</strong></p>
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+<table>
+<tr>
+<td></td>
+<td><strong>Syntaxe</strong></td>
+<td><strong>Description</strong></td>
+</tr>
+<tr>
+	<td><img src="http://www.jetbrains.com/resharper/webhelp50/images/general_enum_VS.png"></td>
+	<td><strong>ModeRegister</strong></td>
+	<td>
+	Mode 0, Mode 1 : Commande indépendante des deux moteurs.<br />
+	Mode 2, Mode 3 : Speed 1 définit la vitesse médiane des deux moteurs. Speed 2 définit le diférentiel de vitesse à appliquer en + ou en - à chaque moteur.<br/>
+	Mode 0: Mode par défaut. 0 (Full Reverse) 128 (Stop) 255 (Full Forward) <br>
+	Mode 1: -128 (Full Reverse) 0 (Stop) 127 (Full Forward).<br>
+	Mode 2: 0 (Full Reverse) 128 (Stop) 255 (Full Forward)<br>
+	Mode 3: -128 (Full Reverse) 0 (Stop) 127 (Full Forward)<br>
+	</td>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+</tr>
+</table><p><strong>Propriétés</strong></p>
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+<table>
+<tr>
+<td></td>
+<td><strong>Syntaxe</strong></td>
+<td><strong>Description</strong></td>
+</tr>
+<tr>
+<td><img src="http://www.jetbrains.com/resharper/webhelp50/images/general_property_VS.png"></td>
+<td><strong>Speed1</strong></td>
+<td>Mode 0 ou 2: Retourne sur un Byte la consigne de vitesse du moteur 1.<br>
+Mode 1 ou 3 : Retourne sur un Byte la vitesse de chacun des deux
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+</td>
+</tr>
+<tr>
+<td><img src="http://www.jetbrains.com/resharper/webhelp50/images/general_property_VS.png"></td>
+<td><strong>Speed2Turn</strong></td>
+<td>Renvoi sur un octet la vitesse du moteur 2 en Mode 0 et 2 et le différentiel de vitesse en mode 1 et 3 </td>
+</tr>
+<tr>
+<td><img src="http://www.jetbrains.com/resharper/webhelp50/images/general_property_VS.png"></td>
+<td><strong>Encoder1</strong></td>
+<td>Retourne sur 32bits la valeur de l'encodeur 1</td>
+</tr>
+<tr>
+<td><img src="http://www.jetbrains.com/resharper/webhelp50/images/general_property_VS.png"></td>
+<td><strong>Encoder2</strong></td>
+<td>Retourne sur 32bits la valeur de l'encodeur 2</td>
+</tr>
+<tr>
+<td><img src="http://www.jetbrains.com/resharper/webhelp50/images/general_property_VS.png"></td>
+<td><strong>Battery</strong></td>
+<td>Retourne sur un octet la valeur de la tension d'alimentation de la carte</td>
+</tr>
+<tr>
+<td><img src="http://www.jetbrains.com/resharper/webhelp50/images/general_property_VS.png"></td>
+<td><strong>Current1</strong></td>
+<td>Retourne sur un octet l'intensité du moteur 1 en (A)</td>
+</tr>
+<tr>
+<td><img src="http://www.jetbrains.com/resharper/webhelp50/images/general_property_VS.png"></td>
+<td><strong>Current2</strong></td>
+<td>Retourne sur un octet l'intensité du moteur 2 en (A)</td>
+</tr>
+<tr>
+<td><img src="http://www.jetbrains.com/resharper/webhelp50/images/general_property_VS.png"></td>
+<td><strong>SoftRev</strong></td>
+<td>Retourne sur un octet le numéro de version du logiciel de la carte MD23/MD25</td>
+</tr>
+<tr>
+<td><img src="http://www.jetbrains.com/resharper/webhelp50/images/general_property_VS.png"></td>
+<td><strong>AccelerationRate</strong></td>
+<td>Retourne sur un octet l'accélération lors entre deux vitesses</td>
+</tr>
+<tr>
+<td><img src="http://www.jetbrains.com/resharper/webhelp50/images/general_property_VS.png"></td>
+<td><strong>Mode</strong></td>
+<td>Retourne sur un octet le mode de fonctionnement de la carte 0,1,2 ou 3</td>
+</tr>
+<tr>
+<td><img src="http://www.jetbrains.com/resharper/webhelp50/images/general_property_VS.png"></td>
+<td><strong>Command</strong></td>
+<td>Retourne sur un octet le contenu du registre de commande</td>
+</tr>
+</table><p><strong>Méthodes publiques</strong></p>
+
+<table>
+<tr>
+<td></td>
+<td><strong>Syntaxe</strong></td>
+<td><strong>Description</strong></td>
+</tr>
+<tr>
+<td><img src="http://www.jetbrains.com/resharper/webhelp50/images/general_method_VS.png"></td>
+<td><strong>void GetAllRegister()</strong></td>
+<td>Lecture des 16 registres de la carte MD23/MD25</td>
+</tr>
+<tr>
+<td><img src="http://www.jetbrains.com/resharper/webhelp50/images/general_method_VS.png"></td>
+<td><strong>void RazEncoders()</strong></td>
+<td>Remise à zéro des deux encodeurs</td>
+</tr>
+<tr>
+<td><img src="http://www.jetbrains.com/resharper/webhelp50/images/general_method_VS.png"></td>
+<td>
+<strong>void SetMode</strong>(<strong>ModeRegister</strong> <em>valmode</em>)</td>
+<td>Définit le mode de fonctionnnement 0, 1,2 ou 3</td>
+</tr>
+<tr>
+<td><img src="http://www.jetbrains.com/resharper/webhelp50/images/general_method_VS.png"></td>
+<td>
+<strong>void SetSpeedTurn</strong>(<strong>byte</strong> <em>ValSpeed1</em>, <strong>byte</strong> <em>ValSpeed2Turn</em>)</td>
+<td>Règle la vitesse des moteurs</td>
+</tr>
+<tr>
+<td><img src="http://www.jetbrains.com/resharper/webhelp50/images/general_method_VS.png"></td>
+<td><strong>void StopMotor()</strong></td>
+<td>Arrêt des deux moteurs</td>
+</tr>
+</table>
       </section>
     </div>
 
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
-        <p class="copyright">Md25 maintained by <a href="https://github.com/WebGE">WebGE</a></p>
+        <p class="copyright">Contrôler une carte MD23/MD25 avec un module FEZ PANDA maintained by <a href="https://github.com/WebGE">WebGE</a></p>
         <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>
