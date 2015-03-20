@@ -1,0 +1,16 @@
+C:\Users\Philippe\Documents\GitHub\MD25\NetduinoMD25\DriverMD2x\bin\Debug\le\DriverMD2x.dll
+C:\Users\Philippe\Documents\GitHub\MD25\NetduinoMD25\DriverMD2x\bin\Debug\be\DriverMD2x.dll
+C:\Users\Philippe\Documents\GitHub\MD25\NetduinoMD25\DriverMD2x\bin\Debug\le\DriverMD2x.pdb
+C:\Users\Philippe\Documents\GitHub\MD25\NetduinoMD25\DriverMD2x\bin\Debug\be\DriverMD2x.pdb
+C:\Users\Philippe\Documents\GitHub\MD25\NetduinoMD25\DriverMD2x\bin\Debug\DriverMD2x.dll
+C:\Users\Philippe\Documents\GitHub\MD25\NetduinoMD25\DriverMD2x\bin\Debug\DriverMD2x.pdb
+C:\Users\Philippe\Documents\GitHub\MD25\NetduinoMD25\DriverMD2x\bin\Debug\le\DriverMD2x.pe
+C:\Users\Philippe\Documents\GitHub\MD25\NetduinoMD25\DriverMD2x\bin\Debug\le\DriverMD2x.pdbx
+C:\Users\Philippe\Documents\GitHub\MD25\NetduinoMD25\DriverMD2x\bin\Debug\be\DriverMD2x.pe
+C:\Users\Philippe\Documents\GitHub\MD25\NetduinoMD25\DriverMD2x\bin\Debug\be\DriverMD2x.pdbx
+C:\Users\Philippe\Documents\GitHub\MD25\NetduinoMD25\DriverMD2x\obj\Debug\be\DriverMD2x.pe
+C:\Users\Philippe\Documents\GitHub\MD25\NetduinoMD25\DriverMD2x\obj\Debug\be\DriverMD2x.pdbx
+C:\Users\Philippe\Documents\GitHub\MD25\NetduinoMD25\DriverMD2x\obj\Debug\le\DriverMD2x.pe
+C:\Users\Philippe\Documents\GitHub\MD25\NetduinoMD25\DriverMD2x\obj\Debug\le\DriverMD2x.pdbx
+C:\Users\Philippe\Documents\GitHub\MD25\NetduinoMD25\DriverMD2x\obj\Debug\DriverMD2x.dll
+C:\Users\Philippe\Documents\GitHub\MD25\NetduinoMD25\DriverMD2x\obj\Debug\DriverMD2x.pdb
