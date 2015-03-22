@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetduinoMD25", "NetduinoMD25\NetduinoMD25.csproj", "{114C403B-7CDE-4BFB-B51D-D83BFAF2B891}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestMD25", "NetduinoMD25\TestMD25.csproj", "{114C403B-7CDE-4BFB-B51D-D83BFAF2B891}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DriverMD2x", "DriverMD2x\DriverMD2x.csproj", "{FE468DF5-0A0E-4287-BF4E-37DD46F4EC23}"
 EndProject
