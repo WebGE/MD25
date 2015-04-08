@@ -37,14 +37,12 @@
     <Compile Include="Program.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="DriverMD2x, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DriverMD2x\bin\Debug\DriverMD2x.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.SPOT.Hardware" />
     <Reference Include="Microsoft.SPOT.Native" />
     <Reference Include="System" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\DriverMD2x\DriverMD2x.csproj">
-      <Project>{FE468DF5-0A0E-4287-BF4E-37DD46F4EC23}</Project>
-      <Name>DriverMD2x</Name>
-    </ProjectReference>
   </ItemGroup>
 </Project>

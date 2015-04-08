@@ -10,7 +10,7 @@ using Microsoft.SPOT;
 using Microsoft.SPOT.Hardware;
 
 
-namespace MD2x
+namespace ToolBoxes
 {
     public class MotorControlMD2x
     {
