@@ -3,18 +3,18 @@ using System.Threading;
 using Microsoft.SPOT;
 using Microsoft.SPOT.Hardware;
 
-using MD2x;
+using ToolBoxes;
 
 namespace NetduinoMD25
 {
     public class Program
     {
         public static void Main()
-        {
+        {   // http://webge.github.io/MD25/
             // Programme de test de la carte MD25
             // Création d'un objet MotorControl (carte MD25)
             // avec l'adresse 0x58 et la fréquence de bus F = 100kHz
-            MotorControlMD2x CarteMD25 = new MotorControlMD2x();
+            MD2x CarteMD25 = new MD2x();
 
             // Pour info : Lecture des registres de la carte MD2x et affichage de la version du logiciel
             Debug.Print("Vers.=" + CarteMD25.SoftRev.ToString());

@@ -15,8 +15,8 @@
     <div id="header_wrap" class="outer">
         <header class="inner">
           <a id="forkme_banner" href="https://github.com/WebGE/MD25">View on GitHub</a>
-          <h1 id="project_title">Contrôler deux motoréducteurs à C.C. équipés d'encodeurs avec une carte MD25 </h1>
-          <h2 id="project_tagline">Programme de test en C# et description de la classe MotorControlMD2x destinés à une Netduino+2</h2>
+          <h1 id="project_title">Contrôler deux motoréducteurs à C.C. équipés d'encodeurs avec une carte MD2x </h1>
+          <h2 id="project_tagline">Programme de test en C# et description de la classe MD2x destinés à une Netduino+2</h2>
             <section id="downloads">
               <a class="zip_download_link" href="https://github.com/WebGE/MD25/zipball/master">Download this project as a .zip file</a>
               <a class="tar_download_link" href="https://github.com/WebGE/MD25/tarball/master">Download this project as a tar.gz file</a>
@@ -29,7 +29,7 @@
       <section id="main_content" class="inner">
 		<hr/>
         <h3><a name="module-de-commande-de-moteurs-md25" class="anchor" href="#module-de-commande-de-moteurs-md25">
-		<span class="octicon octicon-link"></span></a>MD25 - Dual 12Volt 2.8Amp H Bridge Motor Drive</h3>
+		<span class="octicon octicon-link"></span></a>Carte MD25 - Dual 12Volt 2.8Amp H Bridge Motor Drive</h3>
 		<hr/>
 	<ul>
 		<li><strong>Présentation</strong></li>
@@ -56,28 +56,28 @@
 		<li><strong>Framework</strong> : micro framework .NET (NETMF)</li>
 		<li><strong>Langage de programmation</strong> : C#</li>
 	</ul>
-	<p align="center"><img src="http://cdn.netduino.com/images/hardware/netduino2/photo_overhead.gif" alt="Netduino+ 2"></p>
+	<p align="center"><img src="https://lh4.googleusercontent.com/-r-2bq_1YFzw/VUNMy1EODoI/AAAAAAAABXU/q20WYrAvnDw/w350-h280-no/NETDuino2plus.JPG" alt="Netduino+ 2"></p>
 
 	<ul>
 		<li><strong>Sites à consulter</strong>: <a href="http://netduino.com/netduinoplus2/specs.htm" target="_blank">Netduino</a>, <a href="http://www.netmf.com/" target="_blank">NETMF</a></li>
 		<li><strong>Distributeurs</strong> : <a href="http://www.robotshop.com/en/catalogsearch/result/?q=netduino&order=stats_sales_order_count&dir=desc" target="_blank">RobotShop</a>, <a href="http://www.mouser.fr/Search/Refine.aspx?Keyword=netduino" target="_blank">Mouser Electronics</a></li>
 	</ul>
 <hr/>
-	<h3><a name="classe-MotorControlMD2x" class="anchor" href="#classe-MotorControlMD2x"><span class="octicon octicon-link"></span></a>Classe MotorControlMD2x</h3>
+	<h3><a name="classe-MotorControlMD2x" class="anchor" href="#classe-MotorControlMD2x"><span class="octicon octicon-link"></span></a>Classe MD2x</h3>
 <hr/>
 	<p><strong>Contenu du dossier à télécharger</strong></p>
 <hr/>
 	<p> Le dossier à télécharger (au format zip ou tar.gz) contient le répertoire de la solution <strong>NetduinoMD25</strong> composée : </p>
 	<ul>
-		<li>Du projet <strong>DriverMD2x </strong>: le code de la classe <em>MotorControlMd2x</em>.</li>
+		<li>Du projet <strong>MD2x </strong>: le code de la classe <em>Md2x</em>.</li>
 		<li>Du projet <strong>TestMD25 </strong>: un exemple d'utilisation de cette classe.</li>
 	</ul>
 <hr/>
 	<p><strong>Utilisation</strong></p>
 <hr/>
 	<ol>
-		<li><strong>Ajouter</strong> la référence<strong> DriverMD2x</strong> et l'espace de nom <strong>ToolBoxes </strong>dans le projet.</li>
-		<li><strong>Créer</strong> un objet en utilisant un des constructeurs MotorControlMD2x.</li>
+		<li><strong>Ajouter</strong> la référence<strong> MD2x</strong> et l'espace de nom <strong>ToolBoxes </strong>dans le projet.</li>
+		<li><strong>Créer</strong> un objet en utilisant un des constructeurs MD2x.</li>
 		<li><strong>Régler</strong> la fréquence de rotation des moteurs avec la méthode <strong>SetSpeedTurn.</strong></li>
 		<li><strong>etc...</strong></li>
 	</ol>
@@ -91,17 +91,17 @@
 </tr>
 <tr>
 	<td><img src="http://www.jetbrains.com/resharper/webhelp50/images/general_constructor_VS.png"></td>
-	<td><strong>MotorControlMD2x()</strong></td>
-	<td>Instancie un objet "carte MD25". <br> L'addresse sur le bus I2C = 0x58. <br> La fréquence de l'horloge est fixée à F = 100kHz </td>
+	<td><strong>MD2x()</strong></td>
+	<td>Instancie un objet "carte MD25". <br> I2C_Add_7bits = 0x58. <br> La fréquence de l'horloge est fixée à F = 100kHz </td>
 </tr>
 <tr>
 	<td><img src="http://www.jetbrains.com/resharper/webhelp50/images/general_constructor_VS.png"></td>
-	<td><strong>MotorControlMD2x</strong>(<strong>byte</strong> <em>I2C_Add_7bits</em>)</td>
+	<td><strong>MD2x</strong>(<strong>byte</strong> <em>I2C_Add_7bits</em>)</td>
 	<td>Instancie un objet "carte MD25". <br><em>I2C_Add_7bits</em> est à définir dans l'intervalle [0x58,0x5F]. <br>La fréquence de l'horloge est fixée à F = 100kHz.</td>
 </tr>
 <tr>
 	<td><img src="http://www.jetbrains.com/resharper/webhelp50/images/general_constructor_VS.png"></td>
-	<td><strong>MotorControlMD2x</strong>(<strong>byte</strong> <em>I2C_Add_7bits</em>, <strong>UInt16</strong> <em>Frequency</em>)</td>
+	<td><strong>MD2x</strong>(<strong>byte</strong> <em>I2C_Add_7bits</em>, <strong>UInt16</strong> <em>Frequency</em>)</td>
 	<td>Instancie un objet "carte MD25". <br> <em>I2C_Add_7bits</em> est à définir dans l'intervalle [0x58,0x5F]. <br><em>Frequency</em> est à définir dans l'intervalle [100kHz,400kHz]. </td>
 </tr>
 </table>
