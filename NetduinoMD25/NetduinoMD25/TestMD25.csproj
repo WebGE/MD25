@@ -45,4 +45,10 @@
     <Reference Include="Microsoft.SPOT.Native" />
     <Reference Include="System" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Lisez-moi.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Doc_A_Consulter\" />
+  </ItemGroup>
 </Project>
