@@ -116,12 +116,12 @@
 <tr>
 	<td><img src="http://www.jetbrains.com/resharper/webhelp50/images/general_constructor_VS.png"></td>
 	<td><strong>MD2x</strong>(<strong>byte</strong> <em>I2C_Add_7bits</em>)</td>
-	<td>Instancie un objet "carte MD25". <br><em>I2C_Add_7bits</em> est à définir dans l'intervalle [0x58,0x5F]. <br>Fréquence du bus I²C: 100kHz</td>
+	<td>Instancie un objet "carte MD25". <br><em>I2C_Add_7bits: </em>à définir dans l'intervalle [0x58,0x5F]. <br>Fréquence du bus I²C: 100kHz</td>
 </tr>
 <tr>
 	<td><img src="http://www.jetbrains.com/resharper/webhelp50/images/general_constructor_VS.png"></td>
 	<td><strong>MD2x</strong>(<strong>byte</strong> <em>I2C_Add_7bits</em>, <strong>UInt16</strong> <em>Frequency</em>)</td>
-	<td>Instancie un objet "carte MD25". <br> <em>I2C_Add_7bits</em> est à définir dans l'intervalle [0x58,0x5F]. <br><em>Frequency:</em> La fréquence du bus I²C est à définir dans l'intervalle [100kHz,400kHz]. </td>
+	<td>Instancie un objet "carte MD25". <br> <em>I2C_Add_7bits: </em> à définir dans l'intervalle [0x58,0x5F]. <br><em>Frequency: </em>fréquence du bus I²C à définir dans l'intervalle [100kHz,400kHz]. </td>
 </tr>
 </table>
 
@@ -137,8 +137,8 @@
 	<td><strong>ModeRegister</strong></td>
 	<td>
 		Mode 0, Mode 1 : Commande indépendante des deux moteurs.<br />
-		Mode 2, Mode 3 : Speed 1 définit la vitesse médiane des deux moteurs. Speed 2 définit le diférentiel de vitesse à appliquer en + ou en - à chaque moteur.<br/>
-		Mode 0: Mode par défaut. 0 (Full Reverse) 128 (Stop) 255 (Full Forward) <br>
+		Mode 2, Mode 3 : <br>Speed 1 définit la vitesse médiane des deux moteurs. <br>Speed 2 définit le diférentiel de vitesse à appliquer en + ou en - à chaque moteur.<br/>
+		Mode 0: <br>Mode par défaut. 0 (Full Reverse) 128 (Stop) 255 (Full Forward) <br>
 		Mode 1: -128 (Full Reverse) 0 (Stop) 127 (Full Forward).<br>
 		Mode 2: 0 (Full Reverse) 128 (Stop) 255 (Full Forward)<br>
 		Mode 3: -128 (Full Reverse) 0 (Stop) 127 (Full Forward)<br>
