@@ -17,7 +17,8 @@
 		<header class="inner">
 			<a id="forkme_banner" href="https://github.com/WebGE/MD25">View on GitHub</a>
 			<h1 id="project_title">Contrôleur I²C de motoréducteurs à C.C. avec encodeur (MD25) </h1>
-			<h2 id="project_tagline">Description de la classe MD2x développée en C# pour une Netduino plus 2 ou une Netduino 3.</h2>
+			<h2 id="project_tagline">Description de la classe <strong><em>MD25</em></strong> développée en C# sous .NETMF 4.3 pour les cartes Netduino,
+				et FEZ (PANDA, COBRA...)</h2>
 			<section id="downloads">
 				<a class="zip_download_link" href="https://github.com/WebGE/MD25/zipball/master">Download this project as a .zip file</a>
 				<a class="tar_download_link" href="https://github.com/WebGE/MD25/tarball/master">Download this project as a tar.gz file</a>
@@ -28,18 +29,38 @@
 	<!-- MAIN CONTENT -->
 	<div id="main_content_wrap" class="outer">
 		<section id="main_content" class="inner">
-			<hr/>
-			<h3>
+			<hr>
+			<ol>
+				<li>LE MATERIEL
+					<ol>
+						<li>La carte MD25 - Dual 12Volt 2.8Amp H Bridge Motor Drive</li>
+						<li><a href="#DUINO">Les cartes Netduino</a></li>
+						<li><a href="#FEZ">Les cartes FEZ</a> </li>
+					</ol>
+				</li>
+				<li><a href="#LOG">LE LOGICIEL</a>
+					<ol>
+						<li><a href="#REP">Contenu du répertoire proposé au téléchargement</a></li>
+						<li><a href="#NUGET">Le NuGet MicroToolsKit</a></li>
+						<li><a href="#WIKI">Les Wikis</a></li>
+						<li><a href="#DESC">Description et utilisation de la classe MD25</a></li>
+					</ol>
+				</li>
+			</ol>
+			<hr>
+			<h3>1. LE MATERIEL</h3>
+			<hr>
+			<h4>
 				<a name="module-de-commande-de-moteurs-md25" class="anchor" href="#module-de-commande-de-moteurs-md25">
-					<span class="octicon octicon-link"></span></a>La carte MD25 - Dual 12Volt 2.8Amp H Bridge Motor Drive</h3>
-			<hr/>
+					<span class="octicon octicon-link"></span></a>La carte MD25 - Dual 12Volt 2.8Amp H Bridge Motor Drive</h4>
+			<hr>
 			<ul>
 				<li><strong>Présentation</strong></li>
 				<p>Destinée à être commandée par un microcontrôleur au moyen d'une liaison série (niveau logique 0 - 5 V) ou via un <strong>bus I2C™</strong>,
 					cette platine électronique intègre un <strong>double pont en "H"</strong> permettant le pilotage indépendant de <strong>2 moteurs à courant continu avec encodeur</strong>					(consommation: 2,5 A max. par moteur).<br> Des ordres simples permettent de définir le sens de rotation ainsi que la
 					vitesse des moteurs, de lire les informations en provenance des encodeurs, de lire les valeurs de la tension et du courant
 					consommé par les moteurs, de connaître leur vitesse de rotation, de définir les accélérations, etc...</p>
-				<p align="center"><img src="http://www.lextronic.fr/imagelib/48/md25connection.jpg"></p>
+				<p align="center"><img src="images/md25connection.png"></p>
 				<li><strong>Alimentation :</strong> 12 Vcc (un régulateur 5 Vcc intégré délivre 300 mA pour l’électronique de commande externe).</li>
 				<li><strong>Possibilités: </strong>Plusieurs platines peuvent être pilotées en même temps via un bus I2C™</li>
 				<li><strong>Dimensions:</strong> 70 x 60 x 25 mm.</li>
@@ -50,14 +71,60 @@
 			<h3><a name="carte-netduino-de-secret-labs" class="anchor" href="#carte-netduino-de-secret-labs" target="_blank"><span class="octicon octicon-link"></span></a>Les
 				cartes Netduino</h3>
 			<h5>Secret Labs</h5>
-			<hr/>
+			<hr>
+
+			<h4 id="DUINO">
+				<a name="carte-netduino-de-secret-labs" class="anchor" href="#carte-netduino-de-secret-labs" target="_blank">
+					<span class="octicon octicon-link"></span></a>1.3 Les cartes Netduino</h4>
+			<h5>Secret Labs</h5>
+			<hr>
 			<ul>
 				<li><strong>Microcontrôleur</strong> : STM32F405RG 32 bits à architecture Cortex-M4 cadencé à 168 MHz.</li>
-				<li><strong>RAM</strong> : 100 KB (164+)*.</li>
-				<li><strong>Flash</strong> : 384 KB (1408KB)*.</li>
-				<li><strong>Port Ethernet : </strong> 10Mbps (Wifi:802.11b/g/n)*.</li>
+				<li><strong>RAM</strong> : 164KB+.</li>
+				<li><strong>Flash</strong> : 1408KB.</li>
+				<li><strong>Port Ethernet : </strong> 10/100Mbps (Wifi:802.11b/g/n)*.</li>
 				<li><strong>E/S numériques</strong> : 22</li>
 				<li><strong>Entrées analogiques</strong> : 6</li>
+				<li><strong>Stockage</strong>: carte µSD</li>
+				<li><strong>IDE</strong> : Microsoft Visual Studio</li>
+				<li><strong>Framework</strong> : .NETMF 4.3</li>
+				<li><strong>Langages de programmation</strong> : C#, VB</li>
+				<li><strong>Compatibilité</strong> : shield Arduino, Gadgeteer</li>
+			</ul>
+			<table>
+				<tr>
+					<td><img src="images/netduino3ethernet.png" alt="Netduino plus 2" target="_blank" /></td>
+					<td><img src="images/inputandoutput.png" alt="Netduino 3 wifi" target="_blank"
+						/></td>
+				</tr>
+				<tr>
+					<td align="center"><strong>Netduino 3 Ethernet</strong></td>
+					<td align="center"><strong>Netduino 3 wifi*</strong></td>
+				</tr>
+			</table>
+
+			<ul>
+				<li><strong>Sites à consulter</strong> : <a href="http://netduino.com/netduinoplus2/specs.htm" target="_blank">Netduino</a>,
+					<a href="http://www.netmf.com/" target="_blank">NETMF</a></li>
+				<li><strong>Distributeurs</strong> : <a href="http://www.mouser.fr/Search/Refine.aspx?Keyword=netduino" target="_blank">Mouser Electronics</a></li>
+			</ul>
+			<hr>
+
+			<h4 id="FEZ">
+				<a name="carte-netduino-de-secret-labs" class="anchor" href="#carte-netduino-de-secret-labs" target="_blank">
+					<span class="octicon octicon-link"></span></a>1.4 Les cartes FEZ</h4>
+			<h5>GHI Electonics (Extrait)</h5>
+			<hr>
+			<ul>
+				<li><strong>Microcontrôleur</strong> : 180 MHz 32-bit ARM Cortex-M4.(120 MHz 32-bit ARM Cortex-M3 )*</li>
+				<li><strong>SoC(SoM)*</strong> : <a href="https://www.ghielectronics.com/catalog/product/501" target="_blank">G80</a>
+					<a href="https://www.ghielectronics.com/catalog/product/373" target="_blank">G120*</a>
+				</li>
+				<li><strong>RAM</strong> : 156 KB(2.87 MB)*.</li>
+				<li><strong>Flash</strong> : 256 KB (13.67 MB)*.</li>
+				<li><strong>E/S numériques</strong> : 53(60)*</li>
+				<li><strong>Entrées analogiques</strong> : 16(8)*</li>
+				<li><strong>Réseaux : </strong> Ethernet TCP/IP, WiFi, and SSL.</li>
 				<li><strong>Stockage</strong>: carte µSD</li>
 				<li><strong>IDE</strong> : Microsoft Visual Studio</li>
 				<li><strong>Framework</strong> : .NETMF 4.3</li>
@@ -66,48 +133,66 @@
 
 			<table>
 				<tr>
-					<td><img src="http://www.mouser.com/images/microsites/Netduino_Plus_2.jpg" alt="Netduino plus 2" /></td>
-					<td><img src="http://static.netduino.com/images/netduino3wifi/specs/inputandoutput.jpg" alt="Netduino 3 wifi" /></td>
+					<td><img src="images/panda3.png" alt="PANDA III" /></td>
+					<td><img src="images/cobra3.png" alt="COBRA III" /></td>
 				</tr>
 				<tr>
-					<td align="center"><strong>Netduino + 2</strong></td>
-					<td align="center"><strong>Netduino 3 wifi* (compatible Gadgeteer)</strong></td>
+					<td align="center"><strong>PANDA III</strong></td>
+					<td align="center"><strong>COBRA III* (compatible Gadgeteer)</strong></td>
 				</tr>
 			</table>
 
 			<ul>
-				<li><strong>Sites à consulter</strong>: <a href="http://netduino.com/netduinoplus2/specs.htm" target="_blank">Netduino</a>,
+				<li><strong>Sites à consulter</strong> : <a href="https://www.ghielectronics.com/" target="_blank">GHI ELECTRONICS</a>,
 					<a href="http://www.netmf.com/" target="_blank">NETMF</a></li>
-				<li><strong>Distributeurs</strong>: <a href="http://www.mouser.fr/Search/Refine.aspx?Keyword=netduino" target="_blank">Mouser Electronics</a></li>
+				<li><strong>Distributeurs</strong> : <a href="http://www.mouser.fr" target="_blank">Mouser Electronics</a></li>
 			</ul>
-			<hr/>
-			<h3>Wiki</h3>
-			<ul>
-				<li><strong>Exemples pour la carte Netduino sur Wikispaces: <a href="https://csharpembarquenetduino.wikispaces.com/" target="_blank">lien</a></strong></li>
-			</ul>
+
 			<hr>
-			<h3>Contenu du répertoire proposé au téléchargement</h3>
+			<h3 id="LOG">2. LE LOGICIEL</h3>
+			<hr>
+			<h4 id="REP">2.1 Contenu du répertoire proposé au téléchargement</h4>
 			<p>Le répertoire proposé au téléchargement (au format zip ou tar.gz) contient la solution <strong>NetduinoMD25</strong> composée:</p>
 			<ul>
 				<li>Du projet <strong>MD2x </strong>: le <strong>code source</strong> de la classe <em>Md2x</em>.</li>
 				<li>Du projet <strong>TestMD25 </strong>: un exemple d'utilisation de cette classe.</li>
 			</ul>
-			<p><em>Remarques : La dernière version <strong>compilée</strong> de la classe <strong>MD2x</strong> se situe dans la bibliothèque <strong>MicroToolsKit</strong> disponible sur <a href="https://www.nuget.org/" target="_blank">nuget.org</a>.</em></p>
+<<<<<<< HEAD
+
+			<h4 id="NUGET">2.2 Le NuGet MicroToolsKit</h4>
+			<p>La dernière version <strong>compilée</strong> de la classe <strong>PCF8574</strong> se situe dans la bibliothèque <strong>MicroToolsKit</strong> disponible sur <a href="https://www.nuget.org/packages/WebGE.MicroToolsKit/" target="_blank">nuget.org</a>.</p>
+=======
+			<p><em>Remarques : La dernière version <strong>compilée</strong> de la classe <strong>MD2x</strong> se situe dans la bibliothèque <strong>MicroToolsKit</strong> disponible sur <a href="https://www.nuget.org/packages/WebGE.MicroToolsKit/" target="_blank">nuget.org</a>.</em></p>
+>>>>>>> origin/gh-pages
 			<p align="center"><img src="images/NuGet-large.png" /></p>
 			<p><em>Installer cette bibliothèque dans le projet simplifie l'utilisation de cette classe.</em></p>
 			<hr>
-			<h3>Description et utilisation de la classe MD2x</h3>
+
+			<h4 id="WIKI">2.3 Les Wikis</h4>
+			<ul>
+				<li><strong>Fascicules d'exemples de code pour les cartes Netduino. <a href="https://csharpembarquenetduino.wikispaces.com/5.+Les+fascicules+d%27exemples+cod%C3%A9s+en+CSharp" target="_blank">lien</a></strong></li>
+				<li><strong>Fascicule d'exemples de code pour les cartes FEZ. <a href="https://csharpembarquefez.wikispaces.com/5.+Les+fascicules+d%27exemples+cod%C3%A9s+en+CSharp" target="_blank">lien</a></strong></li>
+			</ul>
+			<hr>
+
+			<h4 id="DESC">2.4 Description et utilisation de la classe MD2x</h4>
 			<ul>
 				<li><strong>Rôle: </strong>Contrôler deux motoréducteurs équipés d'un encodeur via le bus I²C.</li>
-				<li><strong>Assembly: </strong> <em>MicroToolsKit</em> (disponible sur <a href="https://www.nuget.org/" target="_blank">nuget.org</a>)</li>
+				<li><strong>Assembly: </strong> <em>MicroToolsKit</em> (disponible sur <a href="https://www.nuget.org/packages/WebGE.MicroToolsKit/" target="_blank">nuget.org</a>)</li>
 				<li><strong>Espace de noms: </strong><em>Microtoolskit.Hardware.MotorDrivers</em></li>
 			</ul>
 
 			<hr/>
 			<p><strong>Création d'un projet avec l'IDE Visual Studio</strong></p>
 			<ol>
+<<<<<<< HEAD
 				<li><strong>Utiliser</strong> le gestionnaire de paquets NuGet pour <strong>ajouter</strong> l'assembly <strong>MicroToolsKit</strong>					(disponible sur <a href="https://www.nuget.org/" target="_blank">nuget.org</a>) dans le répertoire <em>Références</em>					du projet.(clic droit sur <em>Références</em> puis <em>Gérer les packages NuGet...</em>)</li>
+				<li><strong>Ajouter</strong> l'espace de noms <strong>Microtoolskit.Hardware.MotorDrivers</strong> dans l'en-tête du fichier
+					source.</li>
+=======
+				<li><strong>Utiliser</strong> le gestionnaire de paquets NuGet pour <strong>ajouter</strong> l'assembly <strong>MicroToolsKit</strong> (disponible sur <a href="https://www.nuget.org/packages/WebGE.MicroToolsKit/" target="_blank">nuget.org</a>) dans le répertoire <em>Références</em>					du projet.(clic droit sur <em>Références</em> puis <em>Gérer les packages NuGet...</em>)</li>
 				<li><strong>Ajouter</strong> l'espace de noms <strong>Microtoolskit.Hardware.MotorDrivers</strong> dans l'en-tête du fichier source.</li>
+>>>>>>> origin/gh-pages
 				<li><strong>Créer</strong> un objet en utilisant un des constructeurs MD2x.</li>
 				<li><strong>Régler</strong> la fréquence de rotation des moteurs avec la méthode <strong>SetSpeedTurn.</strong></li>
 				<li><strong>etc...</strong></li>
