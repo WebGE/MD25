@@ -17,8 +17,8 @@
 		<header class="inner">
 			<a id="forkme_banner" href="https://github.com/WebGE/MD25">View on GitHub</a>
 			<h1 id="project_title">Contrôleur I²C de motoréducteurs à C.C. avec encodeur (MD25) </h1>
-			<h2 id="project_tagline">Description de la classe <strong><em>MD25</em></strong> développée en C# sous .NETMF 4.3 pour les cartes Netduino,
-				et FEZ (PANDA, COBRA...)</h2>
+			<h2 id="project_tagline">Description de la classe <strong><em>MD25</em></strong> développée en C# sous .NETMF 4.3 pour les cartes Netduino, et
+				FEZ (PANDA, COBRA...)</h2>
 			<section id="downloads">
 				<a class="zip_download_link" href="https://github.com/WebGE/MD25/zipball/master">Download this project as a .zip file</a>
 				<a class="tar_download_link" href="https://github.com/WebGE/MD25/tarball/master">Download this project as a tar.gz file</a>
@@ -30,7 +30,7 @@
 	<div id="main_content_wrap" class="outer">
 		<section id="main_content" class="inner">
 			<hr>
-			<h4>Sommaire</h4>	
+			<h4>Sommaire</h4>
 			<ol>
 				<li>LE MATERIEL
 					<ol>
@@ -68,10 +68,6 @@
 				<li><strong>Documentation :</strong> <a href="http://www.pishrobot.com/files/products/datasheets/md25.pdf" target="_blank">MD25 - Dual 12Volt 2.8Amp H Bridge Motor Drive</a></li>
 				<li><strong>Distributeur :</strong> <a href="http://www.lextronic.fr/P3104-module-de-commande-de-moteur-md25.html" target="_blank">Lextronic</a></li>
 			</ul>
-			<hr/>
-			<h3><a name="carte-netduino-de-secret-labs" class="anchor" href="#carte-netduino-de-secret-labs" target="_blank"><span class="octicon octicon-link"></span></a>Les
-				cartes Netduino</h3>
-			<h5>Secret Labs</h5>
 			<hr>
 
 			<h4 id="DUINO">
@@ -95,8 +91,7 @@
 			<table>
 				<tr>
 					<td><img src="images/netduino3ethernet.png" alt="Netduino plus 2" target="_blank" /></td>
-					<td><img src="images/inputandoutput.png" alt="Netduino 3 wifi" target="_blank"
-						/></td>
+					<td><img src="images/inputandoutput.png" alt="Netduino 3 wifi" target="_blank" /></td>
 				</tr>
 				<tr>
 					<td align="center"><strong>Netduino 3 Ethernet</strong></td>
@@ -152,21 +147,18 @@
 			<hr>
 			<h3 id="LOG">2. LE LOGICIEL</h3>
 			<hr>
+
 			<h4 id="REP">2.1 Contenu du répertoire proposé au téléchargement</h4>
 			<p>Le répertoire proposé au téléchargement (au format zip ou tar.gz) contient la solution <strong>NetduinoMD25</strong> composée:</p>
 			<ul>
 				<li>Du projet <strong>MD2x </strong>: le <strong>code source</strong> de la classe <em>Md2x</em>.</li>
 				<li>Du projet <strong>TestMD25 </strong>: un exemple d'utilisation de cette classe.</li>
 			</ul>
+			<hr>
 
 			<h4 id="NUGET">2.2 Le NuGet MicroToolsKit</h4>
-			<p>La dernière version <strong>compilée</strong> de la classe <strong>PCF8574</strong> se situe dans la bibliothèque 
-			<strong>MicroToolsKit</strong> disponible sur <a href="https://www.nuget.org/packages/WebGE.MicroToolsKit/" target="_blank">nuget.org</a>.</p>
-
-			<p><em>Remarques : La dernière version <strong>compilée</strong> de la classe <strong>MD2x</strong> se situe dans 
-			la bibliothèque <strong>MicroToolsKit</strong> disponible sur <a href="https://www.nuget.org/packages/WebGE.MicroToolsKit/" target="_blank">nuget.org</a>.</em></p>
-			<p><em>Remarques : La dernière version <strong>compilée</strong> de la classe <strong>MD2x</strong> se situe dans 
-			la bibliothèque <strong>MicroToolsKit</strong> disponible sur <a href="https://www.nuget.org/packages/WebGE.MicroToolsKit/" target="_blank">nuget.org</a>.</em></p>
+			<p>La dernière version <strong>compilée</strong> de la classe <strong>MD25</strong> se situe dans la bibliothèque
+				<strong>MicroToolsKit</strong> disponible sur <a href="https://www.nuget.org/packages/WebGE.MicroToolsKit/" target="_blank">nuget.org</a>.</p>
 			<p align="center"><img src="images/NuGet-large.png" /></p>
 			<p><em>Installer cette bibliothèque dans le projet simplifie l'utilisation de cette classe.</em></p>
 			<hr>
@@ -181,7 +173,9 @@
 			<h4 id="DESC">2.4 Description et utilisation de la classe MD2x</h4>
 			<ul>
 				<li><strong>Rôle: </strong>Contrôler deux motoréducteurs équipés d'un encodeur via le bus I²C.</li>
-				<li><strong>Assembly: </strong> <em>MicroToolsKit</em> (disponible sur <a href="https://www.nuget.org/packages/WebGE.MicroToolsKit/" target="_blank">nuget.org</a>)</li>
+				<li><strong>Assembly: </strong> <em>MicroToolsKit</em> (disponible sur
+					<a href="https://www.nuget.org/packages/WebGE.MicroToolsKit/"
+						target="_blank">nuget.org</a>)</li>
 				<li><strong>Espace de noms: </strong><em>Microtoolskit.Hardware.MotorDrivers</em></li>
 			</ul>
 
@@ -190,9 +184,8 @@
 			<ol>
 				<li><strong>Utiliser</strong> le gestionnaire de paquets NuGet pour <strong>ajouter</strong> l'assembly <strong>MicroToolsKit</strong>					(disponible sur <a href="https://www.nuget.org/" target="_blank">nuget.org</a>) dans le répertoire <em>Références</em>					du projet.(clic droit sur <em>Références</em> puis <em>Gérer les packages NuGet...</em>)</li>
 				<li><strong>Ajouter</strong> l'espace de noms <strong>Microtoolskit.Hardware.MotorDrivers</strong> dans l'en-tête du fichier
-					source.</li>
-				<li><strong>Utiliser</strong> le gestionnaire de paquets NuGet pour <strong>ajouter</strong> l'assembly <strong>MicroToolsKit</strong> (disponible sur <a href="https://www.nuget.org/packages/WebGE.MicroToolsKit/" target="_blank">nuget.org</a>) dans le répertoire <em>Références</em>					du projet.(clic droit sur <em>Références</em> puis <em>Gérer les packages NuGet...</em>)</li>
-				<li><strong>Ajouter</strong> l'espace de noms <strong>Microtoolskit.Hardware.MotorDrivers</strong> dans l'en-tête du fichier source.</li>
+					source.
+				</li>
 				<li><strong>Créer</strong> un objet en utilisant un des constructeurs MD2x.</li>
 				<li><strong>Régler</strong> la fréquence de rotation des moteurs avec la méthode <strong>SetSpeedTurn.</strong></li>
 				<li><strong>etc...</strong></li>
@@ -354,4 +347,5 @@
 		</footer>
 	</div>
 </body>
+
 </html>
