@@ -3,7 +3,7 @@ MD25
 
 Source code of the MD25 <strong>NETMF class</strong> contained in the <a href="https://www.nuget.org/packages/WEBGE.Microtoolskit/" target="_blank">MicroToolsKit</a> <strong>library</strong>. Download at <a href="https://www.nuget.org" target="_blank">nuget.com</a>
 
-This class is for a MD25 card : <strong>MD25 - Dual 12Volt 2.8Amp H Bridge Motor Drive</strong>.
+This class is for a MD25 card : <strong>Dual 12Volt 2.8Amp H Bridge Motor Drive</strong>.
 
 
 <strong>Tags</strong>: I²C Bus, Netduino, FEZ, PANDA, COBRA, C#, NETMF, Visual Studio.
