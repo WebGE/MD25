@@ -19,4 +19,4 @@ This class is for a MD25 card : <strong>Dual 12Volt 2.8Amp H Bridge Motor Drive<
 <hr>
 See <a href="http://webge.github.io/MD25/" target="_blank">MD25 GitHub Pages</a> too get started.
 
-Maintened by <a href="mailto:philippemariano@gmail.com">Philippe Mariano</a>
+Maintened by <a href="mailto:philippemariano@gmail.com">WebGE</a>
