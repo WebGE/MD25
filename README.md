@@ -5,7 +5,7 @@
 -------------------------------------
 Source code.
 
-A <strong>.NETMF v4.3 class</strong> write for MD25 board <strong>Dual 12Volt 2.8Amp H Bridge Motor Drive for I²C-bus</strong>. 
+A <strong>.NETMF v4.3 class</strong> write for MD25 board : <strong>Dual 12Volt 2.8Amp H Bridge Motor Drive for I²C-bus</strong>. 
 
 This class is also in the <a href="https://www.nuget.org/packages/WEBGE.Microtoolskit/" target="_blank">MicroToolsKit</a> <strong>library</strong>. Download at <a href="https://www.nuget.org" target="_blank">nuget.com</a>
 
