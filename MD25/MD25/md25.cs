@@ -229,7 +229,7 @@ namespace testMicrotoolsKit
                 }
 
                 /// <summary>
-                /// Time before System IO Exception if transaction failed (in ms).
+                /// Set or return time before System IO Exception if transaction failed (in ms).
                 /// </summary>
                 /// <remarks>
                 /// 1000ms by default
