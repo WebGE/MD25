@@ -24,12 +24,12 @@
       <Compartment Name="Nested Types" Collapsed="false" />
     </Compartments>
     <NestedTypes>
-      <Enum Name="testMicrotoolsKit.Hardware.MotorDrivers.MotorControlMD2x.WRegister">
+      <Enum Name="testMicrotoolsKit.Hardware.MotorDrivers.MotorControlMD2x.WRegister" Collapsed="true">
         <TypeIdentifier>
           <NewMemberFileName>md25.cs</NewMemberFileName>
         </TypeIdentifier>
       </Enum>
-      <Enum Name="testMicrotoolsKit.Hardware.MotorDrivers.MotorControlMD2x.ModeRegister">
+      <Enum Name="testMicrotoolsKit.Hardware.MotorDrivers.MotorControlMD2x.ModeRegister" Collapsed="true">
         <TypeIdentifier>
           <NewMemberFileName>md25.cs</NewMemberFileName>
         </TypeIdentifier>
