@@ -101,7 +101,7 @@ namespace testMicrotoolsKit
                 /// This constructor allows user to specify the Slave Address (bus frequency = 100Khz)
                 /// </summary>
                 /// <param name="SLA">MD25(@=0x58 to 0x5F), 0x58 by default (see datasheet)</param>
-                public MotorControlMD2x(byte SLA)
+                public MotorControlMD2x(UInt16 SLA)
                 {
                     sla = SLA;
                     config = new I2CDevice.Configuration(SLA, 100);
@@ -112,7 +112,7 @@ namespace testMicrotoolsKit
                 /// </summary>
                 /// <param name="SLA">MD25(@=0x58 to 0x5F), 0x58 by default (see datasheet)</param>
                 /// <param name="Frequency">100khz to 400kHz, 100kHz by default</param>
-                public MotorControlMD2x(byte SLA, UInt16 Frequency)
+                public MotorControlMD2x(UInt16 SLA, UInt16 Frequency)
                 {
                     sla = SLA;
                     config = new I2CDevice.Configuration(SLA, Frequency);
