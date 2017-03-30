@@ -31,7 +31,7 @@ This class is also in the <a href="https://www.nuget.org/packages/WEBGE.Microtoo
 <li><strong>MD25</strong>
 <ul>
 <li><strong>MD25</strong> : .NetMF class</li>
-<img src="img/md25.png" />
+<img src="img/MD25.png" />
 <li><strong>Netduino</strong> : class test program for Netduino board</li>
 <li><strong>FezPanda</strong> : class test program for Fez Panda board</li>
 </ul>
@@ -40,11 +40,11 @@ This class is also in the <a href="https://www.nuget.org/packages/WEBGE.Microtoo
 
 <strong>Assembly</strong>
 --------------------------
-<img src="#" />
+To come up
 
 <strong>Video</strong>
 -------------------
-<a href="#" target="_blank">To see on Youtube</a>
+To come up
 
 <strong>Keywords</strong>
 ----------------------------
