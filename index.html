@@ -211,12 +211,12 @@
 					<td><img src="images/Method_16x.png"></td>
 					<td><strong>MotorControlMD2x</strong>(<strong>UInt16</strong> <em>SLA</em>)</td>
 					<td>Instancie un objet "carte MD25". <br><strong>SLA</strong>: à définir dans l'intervalle [0x58,0x5F]. <br><strong>Frequency</strong>: fréquence
-						du bus I²C: 100kHz</td>
+						du bus I²C = 100kHz</td>
 				</tr>
 				<tr>
 					<td><img src="images/Method_16x.png"></td>
 					<td><strong>MotorControlMD2x</strong>(<strong>UInt16</strong> <em>SLA</em>, <strong>UInt16</strong> <em>Frequency</em>)</td>
-					<td>Instancie un objet "carte MD25". <br> <strong>SLA</strong>: à définir dans l'intervalle [0x58,0x5F]. <br><em>Frequency: </em>fréquence
+					<td>Instancie un objet "carte MD25". <br> <strong>SLA</strong>: à définir dans l'intervalle [0x58,0x5F]. <br><strong>Frequency</strong>: fréquence
 						du bus I²C à définir dans l'intervalle [100kHz,400kHz]. </td>
 				</tr>
 			</table>
@@ -235,10 +235,12 @@
 						<strong>Mode 0, Mode 1</strong><br>Commande indépendante des deux moteurs.<br><br>
 						<strong>Mode 2, Mode 3</strong><br>-Speed 1 définit la vitesse médiane des deux moteurs. <br>-Speed 2 définit le diférentiel
 						de vitesse à appliquer en + ou en - à chaque moteur.<br><br>
-						<strong>Mode 0 </strong><br>Mode par défaut. 0 (Full Reverse) 128 (Stop) 255 (Full Forward) <br><br>
-						<strong>Mode 1</strong><br> -128 (Full Reverse) 0 (Stop) 127 (Full Forward).<br><br>
-						<strong>Mode 2</strong><br> 0 (Full Reverse) 128 (Stop) 255 (Full Forward)<br><br>
-						<strong>Mode 3</strong><br> -128 (Full Reverse) 0 (Stop) 127 (Full Forward)
+						<ul>
+							<li><strong>Mode 0 </strong><br>Mode par défaut. 0 (Full Reverse) 128 (Stop) 255 (Full Forward)</li>
+							<li><strong>Mode 1</strong><br> -128 (Full Reverse) 0 (Stop) 127 (Full Forward).</li>
+							<li><strong>Mode 2</strong><br> 0 (Full Reverse) 128 (Stop) 255 (Full Forward)</li>
+							<li><strong>Mode 3</strong><br> -128 (Full Reverse) 0 (Stop) 127 (Full Forward)</li>
+						</ul>
 					</td>
 				</tr>
 			</table>
