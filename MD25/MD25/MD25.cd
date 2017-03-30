@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="testMicrotoolsKit.Hardware.MotorDrivers.MotorControlMD2x">
+    <Position X="0.5" Y="0.5" Width="4" />
+    <Members>
+      <Field Name="acceleration" Hidden="true" />
+      <Field Name="battery" Hidden="true" />
+      <Field Name="command" Hidden="true" />
+      <Field Name="config" Hidden="true" />
+      <Field Name="current1" Hidden="true" />
+      <Field Name="current2" Hidden="true" />
+      <Field Name="encoder1" Hidden="true" />
+      <Field Name="encoder2" Hidden="true" />
+      <Field Name="i2CBus" Hidden="true" />
+      <Field Name="mode" Hidden="true" />
+      <Method Name="SetRegister" Hidden="true" />
+      <Field Name="sla" Hidden="true" />
+      <Field Name="softrev" Hidden="true" />
+      <Field Name="speed1" Hidden="true" />
+      <Field Name="speed2Turn" Hidden="true" />
+      <Field Name="transactionTimeOut" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="testMicrotoolsKit.Hardware.MotorDrivers.MotorControlMD2x.WRegister" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>md25.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="testMicrotoolsKit.Hardware.MotorDrivers.MotorControlMD2x.ModeRegister" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>md25.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>CCACABAgAKQBohigAFAADABRCgQIAQYAAAAQIQAAAAA=</HashCode>
+      <FileName>md25.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

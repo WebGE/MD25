@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MD25", "MD25\MD25.csproj", "{79D4F3B9-32C2-4A5D-9C3F-F9236F7EB327}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Netduino", "Netduino\Netduino.csproj", "{86F44AFC-C87C-4DE3-AABA-3D907018AEA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FezPanda", "FezPanda\FezPanda.csproj", "{E003CF16-33EF-433C-9BFF-DB4625EB7F43}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{79D4F3B9-32C2-4A5D-9C3F-F9236F7EB327}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79D4F3B9-32C2-4A5D-9C3F-F9236F7EB327}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79D4F3B9-32C2-4A5D-9C3F-F9236F7EB327}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79D4F3B9-32C2-4A5D-9C3F-F9236F7EB327}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86F44AFC-C87C-4DE3-AABA-3D907018AEA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86F44AFC-C87C-4DE3-AABA-3D907018AEA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86F44AFC-C87C-4DE3-AABA-3D907018AEA9}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{86F44AFC-C87C-4DE3-AABA-3D907018AEA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86F44AFC-C87C-4DE3-AABA-3D907018AEA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86F44AFC-C87C-4DE3-AABA-3D907018AEA9}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{E003CF16-33EF-433C-9BFF-DB4625EB7F43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E003CF16-33EF-433C-9BFF-DB4625EB7F43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E003CF16-33EF-433C-9BFF-DB4625EB7F43}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{E003CF16-33EF-433C-9BFF-DB4625EB7F43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E003CF16-33EF-433C-9BFF-DB4625EB7F43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E003CF16-33EF-433C-9BFF-DB4625EB7F43}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
