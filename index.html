@@ -198,43 +198,44 @@
 			<hr>
 			<p><strong>Exemple</strong></p>
 			<pre>
-			using System;
-			using System.Threading;
-			using Microsoft.SPOT;
+using System;
+using System.Threading;
+using Microsoft.SPOT;
 
-			using Microtoolskit.Hardware.MotorDrivers;
+using Microtoolskit.Hardware.MotorDrivers;
 
-			namespace NetduinoMD25
+namespace NetduinoMD25
+{
+	public class Program
+	{
+		public static void Main()
+		{   
+			MotorControlMD2x MD25 = new MotorControlMD2x();
+
+			// Pour info : Lecture des registres de la carte MD2x et affichage de la version du logiciel
+			Debug.Print("Vers.=" + MD25.SoftRev.ToString());
+			Debug.Print("Tension=" + ((Single)MD25.Battery / 10).ToString("N1") + "V");
+			Debug.Print("Acceleration=" + MD25.AccelerationRate.ToString());
+			Debug.Print("Mode=" + MD25.Mode.ToString());
+
+			while (true)
 			{
-				public class Program
+				// Essai : Rotation des moteurs jusqu'à ce que la distance recherchée soit atteinte
+				// ---------------------------------------------------------------------
+				MD25.RazEncoders(); // Remise à zéro des codeurs
+				MD25.SetSpeedTurn(140, 140); // Réglage de la vitesse des moteurs
+
+				while (MD25.Encoder1 < 2000)
 				{
-					public static void Main()
-					{   
-						MotorControlMD2x MD25 = new MotorControlMD2x();
-
-						// Pour info : Lecture des registres de la carte MD2x et affichage de la version du logiciel
-						Debug.Print("Vers.=" + MD25.SoftRev.ToString());
-						Debug.Print("Tension=" + ((Single)MD25.Battery / 10).ToString("N1") + "V");
-						Debug.Print("Acceleration=" + MD25.AccelerationRate.ToString());
-						Debug.Print("Mode=" + MD25.Mode.ToString());
-
-						while (true)
-						{
-							// Essai : Rotation des moteurs jusqu'à ce que la distance recherchée soit atteinte
-							// ---------------------------------------------------------------------
-							MD25.RazEncoders(); // Remise à zéro des codeurs
-							MD25.SetSpeedTurn(140, 140); // Réglage de la vitesse des moteurs
-
-							while (MD25.Encoder1 < 2000)
-							{
-								Debug.Print("Codeur 1=" + MD25.Encoder1.ToString() + " " + "Codeur 2=" + MD25.Encoder2.ToString() + " Speed1=" + MD25.Speed1.ToString() + " Speed2=" + MD25.Speed2Turn.ToString());
-							}
-							MD25.StopMotor();  // Arrêt des moteurs
-							Thread.Sleep(5000);
-						}          
-					}
+					Debug.Print("Codeur 1=" + MD25.Encoder1.ToString() + " " + "Codeur 2=" + MD25.Encoder2.ToString() +
+					 " Speed1=" + MD25.Speed1.ToString() + " Speed2=" + MD25.Speed2Turn.ToString());
 				}
-			}
+				MD25.StopMotor();  // Arrêt des moteurs
+				Thread.Sleep(5000);
+			}          
+		}
+	}
+}
       		</pre>
 			<hr>
 			<p><strong>Constructeurs</strong></p>
