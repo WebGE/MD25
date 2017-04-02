@@ -42,7 +42,7 @@ This class is also in the <a href="https://www.nuget.org/packages/WEBGE.Microtoo
 --------------------------
 <img src="img/MD25.jpg" />
 
-<strong>Video</strong>
+<strong>Videos</strong>
 -------------------
 <ul>
 <li><a href="https://youtu.be/gIigdBUdnPI">Benchmark : to see on youtube</a> </li>
@@ -55,6 +55,7 @@ I²C Bus, Motor Drive, Netduino, FEZ, PANDA, COBRA, C#, NETMF, Visual Studio.
 
 <strong>Todo list</strong>
 -------------------
+Set speed1, speed2Turn, mode registers <br>
 Change I2C address 
 
 <strong>To get started</strong>
