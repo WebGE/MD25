@@ -374,13 +374,13 @@ namespace NetduinoMD25
 					<td><strong>Battery</strong></td>
 					<td>Retourne la tension d'alimentation (x10) de la carte en (V). Octet non signé.<br><br>
 						<strong>Exemple</strong><br>
-						<em>Debug.Print("Tension=" + ((Single)MD25.Battery / 10).ToString("N1") + "V");</em>
+						<em>Debug.Print("Tension=" + ((Single)MD25.Battery / 10).ToString("F1") + "V");</em>
 					</td>
 				</tr>
 				<tr>
 					<td><img src="images/Property_20x.png"></td>
 					<td><strong>Current1</strong></td>
-					<td>Retourne l'intensité du moteur 1 en (A). Octet non signé.<br><br>
+					<td>Retourne l'intensité du moteur 1 (x10) en (A). Octet non signé.<br><br>
 						<strong>Exemple</strong><br>
 						<em>Debug.Print("I_moteur 1=" + MD25.Current1.ToString());</em>
 					</td>
@@ -388,9 +388,9 @@ namespace NetduinoMD25
 				<tr>
 					<td><img src="images/Property_20x.png"></td>
 					<td><strong>Current2</strong></td>
-					<td>Retourne l'intensité du moteur 2 en (A). Octet non signé.<br><br>
+					<td>Retourne l'intensité du moteur 2 (x10) en (A). Octet non signé.<br><br>
 						<strong>Exemple</strong><br>
-						<em>Debug.Print("I_moteur 2=" + MD25.Current2.ToString());</em>
+						<em>Debug.Print("I_moteur 2=" + ((Single)MD25.Current2 / 10).ToString("F1") + "A");</em>
 					</td>
 				</tr>
 				<tr>
@@ -398,7 +398,7 @@ namespace NetduinoMD25
 					<td><strong>SoftRev</strong></td>
 					<td>Retourne le numéro de version du logiciel de la carte MD25. Octet non signé.<br><br>
 						<strong>Exemple</strong><br>
-						<em>Debug.Print("Vers.=" + MD25.SoftRev.ToString());</em>
+						<em>Debug.Print("I_moteur 1=" + ((Single)MD25.Current1 / 10).ToString("F1") + "A");</em>
 
 					</td>
 				</tr>
