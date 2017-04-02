@@ -286,12 +286,9 @@ namespace NetduinoMD25
 					<td><strong>ModeRegister</strong></td>
 					<td>
 						<strong>Mode 0, Mode 1</strong><br>Commande indépendante des deux moteurs.<br>- Speed 1 règle la vitesse du moteur
-						1. <br> - Speed 2 règle la vitesse du moteur 1.<br><br> Effet des paramètres de la méthode SetSpeedTurn : ValSpeed1
-						et ValSpeed2 dans les différents modes. <br>
-
-						<br>
-						<strong>Mode 2, Mode 3</strong><br>-Speed 1 définit la vitesse médiane des deux moteurs. <br>-Speed 2 définit le diférentiel
-						de vitesse à appliquer en + ou en - à chaque moteur.<br><br> Effet des paramètres de la méthode SetSpeedTurn : ValSpeed1
+						1. <br> - Speed 2 règle la vitesse du moteur 1.<br>
+						<strong>Mode 2, Mode 3</strong><br>- Le registre Speed1 définit la vitesse médiane des deux moteurs. <br>- Le registre Speed2Turn définit le diférentiel
+						de vitesse à appliquer en + ou en - à chaque moteur (voir Speed2).<br><br> Effet des paramètres de la méthode SetSpeedTurn : ValSpeed1
 						et ValSpeed2 dans les différents modes. <br>
 						<ul>
 							<li><strong>Mode 0 </strong>(par défaut) <br> 0 (Full Reverse) 128 (Stop) 255 (Full Forward)</li>
@@ -336,7 +333,7 @@ namespace NetduinoMD25
 					<td><img src="images/Property_20x.png"></td>
 					<td><strong>Speed2Turn</strong></td>
 					<td>
-						Fixe (à venir) ou retourne la consigne de vitesse du moteur 2 (mode 0, 1) ou la consigne de direction (mode 2,3 : Turn).
+						Fixe (à venir) ou retourne la consigne de vitesse du moteur 2 (mode 0, 1) ou la consigne de direction du système déplacé par les deux moteurs (mode 2,3 : Turn).
 						Octet non signé.
 						<br><br>
 						<strong>Note sur le mode Turn</strong><br> Selon la valeur du registre de vitesse (Speed1), le logiciel de la carte
@@ -350,7 +347,10 @@ namespace NetduinoMD25
 							</li>
 						</ul>
 						<strong>Exemple</strong><br> // Pour connaître la consigne de vitesse du moteur 2 <br>
-						<em>Debug.Print("Speed2=" + MD25.Speed2Turn.ToString());
+						<em>Debug.Print("Speed2=" + MD25.Speed2Turn.ToString());</em><br><br>
+						// Pour fixer la consigne de direction <br>
+						A venir
+
 					</td>
 				</tr>
 				<tr>
