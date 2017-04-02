@@ -323,7 +323,7 @@ namespace NetduinoMD25
 							</li>
 						</ul>
 						<br>
-						<strong>Exemple</strong><br> // Pour connaître la consigne de vitesse du moteur 1 <br>
+						<strong>Exemples</strong><br> // Pour connaître la consigne de vitesse du moteur 1 <br>
 						<em>Debug.Print("Speed1=" + MD25.Speed1.ToString());</em><br><br> // Pour fixer la consigne de vitesse du moteur 1
 						(mode 0) <br>
 						<em>MD25.Speed1 = 140;</em>
@@ -346,7 +346,7 @@ namespace NetduinoMD25
 								turn
 							</li>
 						</ul>
-						<strong>Exemple</strong><br> // Pour connaître la consigne de vitesse du moteur 2 <br>
+						<strong>Exemples</strong><br> // Pour connaître la consigne de vitesse du moteur 2 <br>
 						<em>Debug.Print("Speed2=" + MD25.Speed2Turn.ToString());</em><br><br>
 						// Pour fixer la consigne de direction <br>
 						A venir
@@ -406,8 +406,8 @@ namespace NetduinoMD25
 					<td><img src="images/Property_20x.png"></td>
 					<td><strong>AccelerationRate</strong></td>
 					<td>Fixe ou retourne l'accélération programmée lors d'un changement de vitesse. Octet non signé.<br><br>
-						<strong>Exemple</strong><br> // Pour connaître la valeur de l'accélération <br>
-						<em>Debug.Print("Acceleration=" + MD25.AccelerationRate.ToString());</em> <br> // Pour fixer la valeur de l'accélération
+						<strong>Exemples</strong><br> // Pour connaître la valeur de l'accélération <br>
+						<em>Debug.Print("Acceleration=" + MD25.AccelerationRate.ToString());</em> <br><br> // Pour fixer la valeur de l'accélération
 						<br>
 						<em>byte MD25.AccAccelerationRate = 1;</em>
 					</td>
@@ -415,9 +415,11 @@ namespace NetduinoMD25
 				<tr>
 					<td><img src="images/Property_20x.png"></td>
 					<td><strong>Mode</strong></td>
-					<td>Retourne le mode de fonctionnement de la carte 0,1,2 ou 3. Octet non signé.<br><br>
-						<strong>Exemple</strong><br> // Pour connaitre le mode de fonctionnement de la carte <br>
-						<em>Debug.Print(Mode=" + MD25.Mode.ToString());</em>
+					<td>Fixe (à venir) ou retourne le mode de fonctionnement de la carte 0, 1, 2 ou 3. Octet non signé.<br><br>
+						<strong>Exemples</strong><br> // Pour connaitre le mode de fonctionnement de la carte <br>
+						<em>Debug.Print(Mode=" + MD25.Mode.ToString());</em> <br>
+						// Pour fixer le mode de fonctionnement de la carte
+						A venir
 					</td>
 				</tr>
 				<tr>
