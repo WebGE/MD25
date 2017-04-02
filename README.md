@@ -42,11 +42,11 @@ This class is also in the <a href="https://www.nuget.org/packages/WEBGE.Microtoo
 --------------------------
 <img src="img/MD25.jpg" />
 
-<strong>Videos</strong>
+<strong>Videos to see on youtube</strong>
 -------------------
 <ul>
-<li><a href="https://youtu.be/gIigdBUdnPI">Benchmark : to see on youtube</a> </li>
-<li><a href="https://youtu.be/ovv2w9cWWYM">Solar exploration robot : to see on youtube</a> </li>
+<li><a href="https://youtu.be/gIigdBUdnPI">Benchmark</a> </li>
+<li><a href="https://youtu.be/ovv2w9cWWYM">Solar exploration robot</a> </li>
 </ul>
 
 <strong>Keywords</strong>
