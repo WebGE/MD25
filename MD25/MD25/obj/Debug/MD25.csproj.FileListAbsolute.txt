@@ -45,3 +45,27 @@ C:\Users\phili\OneDrive\Documents\Visual Studio 2015\Projects\MD25\MD25\obj\Debu
 C:\Users\phili\OneDrive\Documents\Visual Studio 2015\Projects\MD25\MD25\obj\Debug\le\MD25.pdbx
 C:\Users\phili\OneDrive\Documents\Visual Studio 2015\Projects\MD25\MD25\obj\Debug\MD25.csprojResolveAssemblyReference.cache
 C:\Users\phili\OneDrive\Documents\Visual Studio 2015\Projects\MD25\MD25\obj\Debug\TinyCLR_DebugReferences.cache
+C:\Users\phili\OneDrive\Documents\GitHub\MD25\MD25\MD25\bin\Debug\le\MD25.dll
+C:\Users\phili\OneDrive\Documents\GitHub\MD25\MD25\MD25\bin\Debug\be\MD25.dll
+C:\Users\phili\OneDrive\Documents\GitHub\MD25\MD25\MD25\bin\Debug\le\MD25.pdb
+C:\Users\phili\OneDrive\Documents\GitHub\MD25\MD25\MD25\bin\Debug\be\MD25.pdb
+C:\Users\phili\OneDrive\Documents\GitHub\MD25\MD25\MD25\bin\Debug\MD25.dll
+C:\Users\phili\OneDrive\Documents\GitHub\MD25\MD25\MD25\bin\Debug\MD25.pdb
+C:\Users\phili\OneDrive\Documents\GitHub\MD25\MD25\MD25\bin\Debug\le\MD25.pe
+C:\Users\phili\OneDrive\Documents\GitHub\MD25\MD25\MD25\bin\Debug\le\MD25.pdbx
+C:\Users\phili\OneDrive\Documents\GitHub\MD25\MD25\MD25\bin\Debug\be\MD25.pe
+C:\Users\phili\OneDrive\Documents\GitHub\MD25\MD25\MD25\bin\Debug\be\MD25.pdbx
+C:\Users\phili\OneDrive\Documents\GitHub\MD25\MD25\MD25\bin\Debug\LE\MicroToolsKit.pe
+C:\Users\phili\OneDrive\Documents\GitHub\MD25\MD25\MD25\bin\Debug\BE\MicroToolsKit.pe
+C:\Users\phili\OneDrive\Documents\GitHub\MD25\MD25\MD25\bin\Debug\LE\MicroToolsKit.pdbx
+C:\Users\phili\OneDrive\Documents\GitHub\MD25\MD25\MD25\bin\Debug\BE\MicroToolsKit.pdbx
+C:\Users\phili\OneDrive\Documents\GitHub\MD25\MD25\MD25\bin\Debug\MicroToolsKit.dll
+C:\Users\phili\OneDrive\Documents\GitHub\MD25\MD25\MD25\bin\Debug\MicroToolsKit.xml
+C:\Users\phili\OneDrive\Documents\GitHub\MD25\MD25\MD25\obj\Debug\MD25.csprojResolveAssemblyReference.cache
+C:\Users\phili\OneDrive\Documents\GitHub\MD25\MD25\MD25\obj\Debug\TinyCLR_DebugReferences.cache
+C:\Users\phili\OneDrive\Documents\GitHub\MD25\MD25\MD25\obj\Debug\be\MD25.pe
+C:\Users\phili\OneDrive\Documents\GitHub\MD25\MD25\MD25\obj\Debug\be\MD25.pdbx
+C:\Users\phili\OneDrive\Documents\GitHub\MD25\MD25\MD25\obj\Debug\le\MD25.pe
+C:\Users\phili\OneDrive\Documents\GitHub\MD25\MD25\MD25\obj\Debug\le\MD25.pdbx
+C:\Users\phili\OneDrive\Documents\GitHub\MD25\MD25\MD25\obj\Debug\MD25.dll
+C:\Users\phili\OneDrive\Documents\GitHub\MD25\MD25\MD25\obj\Debug\MD25.pdb
