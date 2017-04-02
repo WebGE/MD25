@@ -286,10 +286,10 @@ namespace NetduinoMD25
 					<td><strong>ModeRegister</strong></td>
 					<td>
 						<strong>Mode 0, Mode 1</strong><br>Commande indépendante des deux moteurs.<br>- Speed 1 règle la vitesse du moteur
-						1. <br> - Speed 2 règle la vitesse du moteur 1.<br>
+						1. <br> - Speed 2 règle la vitesse du moteur 2.<br><br>
 						<strong>Mode 2, Mode 3</strong><br>- Le registre Speed1 définit la vitesse médiane des deux moteurs. <br>- Le registre Speed2Turn définit le diférentiel
 						de vitesse à appliquer en + ou en - à chaque moteur (voir Speed2).<br><br> Effet des paramètres de la méthode SetSpeedTurn : ValSpeed1
-						et ValSpeed2 dans les différents modes. <br>
+						et ValSpeed2 ou des propriétés Speed1 et Speed2Turn dans les différents modes. <br>
 						<ul>
 							<li><strong>Mode 0 </strong>(par défaut) <br> 0 (Full Reverse) 128 (Stop) 255 (Full Forward)</li>
 							<li><strong>Mode 1</strong><br> -128 (Full Reverse) 0 (Stop) 127 (Full Forward).</li>
