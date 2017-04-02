@@ -318,11 +318,12 @@ namespace NetduinoMD25
 					<td><img src="images/Property_20x.png"></td>
 					<td><strong>Speed2Turn</strong></td>
 					<td>
+						En cours de rédaction.
 						<ul>
 							<li>
-								Modes 0 (le seul implémenté actuellement) et 1: Retourne la consigne de vitesse du moteur 2. Octet non signé. <br><br>
+								Modes 0 (le seul implémenté actuellement) et 1: Retourne la consigne de vitesse du moteur 2. Octet non signé. <br>
 								<strong>Exemple</strong><br>
-								<em>Debug.Print("Speed2=" + MD25.Speed2Turn.ToString());</em>
+								<em>Debug.Print("Speed2=" + MD25.Speed2Turn.ToString());</em><br>
 							</li>
 							<li>
 								Modes 2 et 3 : Retourne la consigne de rotation appliquée aux moteurs 1 et 2.
@@ -349,7 +350,7 @@ namespace NetduinoMD25
 				<tr>
 					<td><img src="images/Property_20x.png"></td>
 					<td><strong>Battery</strong></td>
-					<td>Retourne la tension d'alimentation (x10) de la carte. Octet non signé.<br><br>
+					<td>Retourne la tension d'alimentation (x10) de la carte en (V). Octet non signé.<br><br>
 						<strong>Exemple</strong><br>
 						<em>Debug.Print("Tension=" + ((Single)MD25.Battery / 10).ToString("N1") + "V");</em>
 					</td>
