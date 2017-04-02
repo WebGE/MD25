@@ -315,8 +315,8 @@ namespace NetduinoMD25
 					<td><strong>Speed1</strong></td>
 					<td>
 						Fixe (à venir) ou retourne la consigne de vitesse du moteur 1 (mode 0, 1) ou des deux moteurs (mode 2,3). Octet non signé.
-						<br> <strong>Note</strong><br>Selon le mode choisi, ce registre règle la vitesse d'un moteur ou des deux. <br>En
-						mode 0 ou 1, il règle la vitesse du moteur 1. Plus la valeur augmente, plus la fréquence de rotation augmente. <br>Dans
+						<br> <strong>Note</strong><br>Selon le mode choisi, ce registre règle la vitesse d'un moteur ou des deux. <br>En mode
+						0 ou 1, il règle la vitesse du moteur 1. Plus la valeur augmente, plus la fréquence de rotation augmente. <br>Dans
 						les modes 2 et 3 (Turn) il contrôle la vitesse moyenne des deux moteurs.
 						<br><br>
 						<strong>Exemple</strong><br> // Pour connaître la consigne de vitesse du moteur 1 <br>
@@ -329,13 +329,16 @@ namespace NetduinoMD25
 					<td><img src="images/Property_20x.png"></td>
 					<td><strong>Speed2Turn</strong></td>
 					<td>
-						Fixe (à venir) ou retourne la consigne de vitesse du moteur 2 (mode 0, 1) ou la consigne de direction (mode 2,3 : Turn). Octet non signé.
-						<br>
-						<strong>Note sur le mode Turn</strong><br>
-						Selon la valeur du registre de direction, le logiciel de la carte MD25 détermine si la direction est directe ou inverse. <br>
+						Fixe (à venir) ou retourne la consigne de vitesse du moteur 2 (mode 0, 1) ou la consigne de direction (mode 2,3 : Turn).
+						Octet non signé.
+						<br><br>
+						<strong>Note sur le mode Turn</strong><br> Selon la valeur du registre de vitesse (Speed1), le logiciel de la carte
+						MD25 détermine si la direction est directe ou inverse. <br>
 						<ul>
-							<li>Si la direction est directe : <br> motor speed 1 = speed - turn <br> motor speed2 = speed + turn</li>
-							<li>Si la direction est inverse : <br> motor speed 1 = speed + turn <br> motor speed2 = speed -+ turn</li>
+							<li>Si la direction est directe : <br> - La vitesse du moteur 1 = speed - turn <br> - La vitesse du moteur 2 = speed +
+								turn</li>
+							<li>Si la direction est inverse : <br> - La vitesse du moteur 1 = speed + turn <br> - La vitesse du moteur 2 = speed -
+								turn</li>
 						</ul>
 
 						<strong>Exemple</strong><br>
