@@ -317,7 +317,7 @@ namespace NetduinoMD25
 				<tr>
 					<td><img src="images/Property_20x.png"></td>
 					<td><strong>Speed2Turn</strong></td>
-					<td>Dans le Mode 0 (le seul implémenté actuellement): Retourne la consigne de vitesse du moteur 2. Octet non signé. 	<br><br>					
+					<td>Dans le Mode 0 (le seul implémenté actuellement): Retourne la consigne de vitesse du moteur 2. Octet non signé. <br><br>					
 						<strong>Exemple</strong><br>
 						<em>Debug.Print("Speed2=" + MD25.Speed2Turn.ToString());</em>
 					</td>
@@ -325,47 +325,76 @@ namespace NetduinoMD25
 				<tr>
 					<td><img src="images/Property_20x.png"></td>
 					<td><strong>Encoder1</strong></td>
-					<td>Retourne la valeur de l'encodeur 1. Mot de 32bits signé.</td>
+					<td>Retourne la valeur de l'encodeur 1 (calculée à partir des registres Enc1a,b,c et d). Mot de 32bits signé.<br><br>
+						<strong>Exemple</strong><br>
+						<em>Debug.Print("Codeur 1=" + MD25.Encoder1.ToString());</em>
+					</td>
 				</tr>
 				<tr>
 					<td><img src="images/Property_20x.png"></td>
 					<td><strong>Encoder2</strong></td>
-					<td>Retourne la valeur de l'encodeur 2. Mot de 32bits signé.</td>
+					<td>Retourne la valeur de l'encodeur 2 (calculée à partir des registres Enc2a,b,c et d). Mot de 32bits signé.<br><br>
+						<strong>Exemple</strong><br>
+						<em>Debug.Print("Codeur 2=" + MD25.Encoder2.ToString());</em>
+					</td>
 				</tr>
 				<tr>
 					<td><img src="images/Property_20x.png"></td>
 					<td><strong>Battery</strong></td>
-					<td>Retourne la tension d'alimentation (x10) de la carte. Octet non signé.</td>
+					<td>Retourne la tension d'alimentation (x10) de la carte. Octet non signé.<br><br>
+						<strong>Exemple</strong><br>
+						<em>Debug.Print("Tension=" + ((Single)MD25.Battery / 10).ToString("N1") + "V");</em>
+					</td>
 				</tr>
 				<tr>
 					<td><img src="images/Property_20x.png"></td>
 					<td><strong>Current1</strong></td>
-					<td>Retourne l'intensité du moteur 1 en (A). Octet non signé.</td>
+					<td>Retourne l'intensité du moteur 1 en (A). Octet non signé.<br><br>
+						<strong>Exemple</strong><br>
+						<em>Debug.Print("" + );</em>
+
+					</td>
 				</tr>
 				<tr>
 					<td><img src="images/Property_20x.png"></td>
 					<td><strong>Current2</strong></td>
-					<td>Retourne l'intensité du moteur 2 en (A). Octet non signé.</td>
+					<td>Retourne l'intensité du moteur 2 en (A). Octet non signé.<br><br>
+						<strong>Exemple</strong><br>
+						<em>Debug.Print("" + );</em>
+					</td>
 				</tr>
 				<tr>
 					<td><img src="images/Property_20x.png"></td>
 					<td><strong>SoftRev</strong></td>
-					<td>Retourne le numéro de version du logiciel de la carte MD25. Octet non signé.</td>
+					<td>Retourne le numéro de version du logiciel de la carte MD25. Octet non signé.<br><br>
+						<strong>Exemple</strong><br>
+						<em>Debug.Print("" + );</em>
+
+					</td>
 				</tr>
 				<tr>
 					<td><img src="images/Property_20x.png"></td>
 					<td><strong>AccelerationRate</strong></td>
-					<td>Fixe ou retourne l'accélération programmée lors d'un changement de vitesse. Octet non signé.</td>
+					<td>Fixe ou retourne l'accélération programmée lors d'un changement de vitesse. Octet non signé.<br><br>
+						<strong>Exemple</strong><br>
+						<em>Debug.Print("" + );</em>
+					</td>
 				</tr>
 				<tr>
 					<td><img src="images/Property_20x.png"></td>
 					<td><strong>Mode</strong></td>
-					<td>Retourne le mode de fonctionnement de la carte 0,1,2 ou 3. Octet non signé.</td>
+					<td>Retourne le mode de fonctionnement de la carte 0,1,2 ou 3. Octet non signé.<br><br>
+						<strong>Exemple</strong><br>
+						<em>Debug.Print("" + );</em>
+					</td>
 				</tr>
 				<tr>
 					<td><img src="images/Property_20x.png"></td>
 					<td><strong>Command</strong></td>
-					<td>Fixe ou retourne le contenu du registre de commande. Octet non signé.</td>
+					<td>Fixe ou retourne le contenu du registre de commande. Octet non signé.<br><br>
+						<strong>Exemple</strong><br>
+						<em>Debug.Print("" + );</em>
+					</td>
 				</tr>
 				<tr>
 					<td><img src="images/Property_20x.png"></td>
