@@ -250,7 +250,7 @@ namespace NetduinoMD25
 					<td><strong>MotorControlMD2x()</strong></td>
 					<td>Instancie un objet "carte MD25". <br> <strong>SLA</strong> = 0x58 (par défaut). <br><strong>Frequency</strong> : fréquence
 						du bus I²C = 100kHz (par défaut) <br><br>
-						<strong>Exemple</strong>
+						<strong>Exemple</strong><br>
 						<em>var MD25 = new MotorControlMD2x();</em>
 					</td>
 				</tr>
@@ -258,16 +258,17 @@ namespace NetduinoMD25
 					<td><img src="images/Method_16x.png"></td>
 					<td><strong>MotorControlMD2x</strong>(<strong>UInt16</strong> <em>SLA</em>)</td>
 					<td>Instancie un objet "carte MD25". <br><strong>SLA</strong>: à définir dans l'intervalle [0x58,0x5F]. <br><strong>Frequency</strong>:
-						fréquence du bus I²C = 100kHz</td><br>
-					<strong>Exemple</strong>
-					<em>var MD25 = new MotorControlMD2x(0x59);</em>
+						fréquence du bus I²C = 100kHz<br><br>
+						<strong>Exemple</strong><br>
+						<em>var MD25 = new MotorControlMD2x(0x59);</em>
+					</td>
 				</tr>
 				<tr>
 					<td><img src="images/Method_16x.png"></td>
 					<td><strong>MotorControlMD2x</strong>(<strong>UInt16</strong> <em>SLA</em>, <strong>UInt16</strong> <em>Frequency</em>)</td>
 					<td>Instancie un objet "carte MD25". <br> <strong>SLA</strong>: à définir dans l'intervalle [0x58,0x5F]. <br><strong>Frequency</strong>:
 						fréquence du bus I²C à définir dans l'intervalle [100kHz,400kHz]. <br><br>
-						<strong>Exemple</strong>
+						<strong>Exemple</strong><br>
 						<em>var MD25 = new MotorControlMD2x(0x58,200);</em>
 					</td>
 				</tr>
