@@ -44,7 +44,8 @@ This class is also in the <a href="https://www.nuget.org/packages/WEBGE.Microtoo
 
 <strong>Video</strong>
 -------------------
-<a href="https://youtu.be/gIigdBUdnPI">To see on youtube</a> 
+<a href="https://youtu.be/gIigdBUdnPI">Benchmark : to see on youtube</a> 
+<a href="https://youtu.be/ovv2w9cWWYM">Solar exploration robot : to see on youtube</a> 
 
 <strong>Keywords</strong>
 ----------------------------
