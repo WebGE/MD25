@@ -382,7 +382,7 @@ namespace NetduinoMD25
 					<td><strong>Current1</strong></td>
 					<td>Retourne l'intensité du moteur 1 (x10) en (A). Octet non signé.<br><br>
 						<strong>Exemple</strong><br>
-						<em>Debug.Print("I_moteur 1=" + MD25.Current1.ToString());</em>
+						<em>Debug.Print("I_moteur 1=" + ((Single)MD25.Current1 / 10).ToString("F1") + "A");</em>
 					</td>
 				</tr>
 				<tr>
@@ -398,8 +398,7 @@ namespace NetduinoMD25
 					<td><strong>SoftRev</strong></td>
 					<td>Retourne le numéro de version du logiciel de la carte MD25. Octet non signé.<br><br>
 						<strong>Exemple</strong><br>
-						<em>Debug.Print("I_moteur 1=" + ((Single)MD25.Current1 / 10).ToString("F1") + "A");</em>
-
+						<em>Debug.Print("Vers.=" + MD25.SoftRev.ToString());</em>
 					</td>
 				</tr>
 				<tr>
@@ -417,8 +416,8 @@ namespace NetduinoMD25
 					<td><strong>Mode</strong></td>
 					<td>Fixe (à venir) ou retourne le mode de fonctionnement de la carte 0, 1, 2 ou 3. Octet non signé.<br><br>
 						<strong>Exemples</strong><br> // Pour connaitre le mode de fonctionnement de la carte <br>
-						<em>Debug.Print(Mode=" + MD25.Mode.ToString());</em> <br>
-						// Pour fixer le mode de fonctionnement de la carte
+						<em>Debug.Print(Mode=" + MD25.Mode.ToString());</em> <br><br>
+						// Pour fixer le mode de fonctionnement de la carte <br>
 						A venir
 					</td>
 				</tr>
