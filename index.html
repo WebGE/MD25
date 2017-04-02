@@ -287,8 +287,8 @@ namespace NetduinoMD25
 					<td>
 						<strong>Mode 0, Mode 1</strong><br>Commande indépendante des deux moteurs.<br><br>
 						<strong>Mode 2, Mode 3</strong><br>-Speed 1 définit la vitesse médiane des deux moteurs. <br>-Speed 2 définit le diférentiel
-						de vitesse à appliquer en + ou en - à chaque moteur.<br><br>
-						Effet des paramètres de la méthode SetSpeedTurn : ValSpeed1 et ValSpeed2. <br>
+						de vitesse à appliquer en + ou en - à chaque moteur.<br><br> Effet des paramètres de la méthode SetSpeedTurn : ValSpeed1
+						et ValSpeed2 dans les différents modes. <br>
 						<ul>
 							<li><strong>Mode 0 </strong>(par défaut) <br> 0 (Full Reverse) 128 (Stop) 255 (Full Forward)</li>
 							<li><strong>Mode 1</strong><br> -128 (Full Reverse) 0 (Stop) 127 (Full Forward).</li>
@@ -309,12 +309,18 @@ namespace NetduinoMD25
 				<tr>
 					<td><img src="images/Property_20x.png"></td>
 					<td><strong>Speed1</strong></td>
-					<td>Dans le Mode 0 (le seul implémenté actuellement): Retourne la consigne de vitesse du moteur 1. Octet non signé.</td>
+					<td>Dans le Mode 0 (le seul implémenté actuellement): Retourne la consigne de vitesse du moteur 1. Octet non signé. <br><br>
+						<strong>Exemple</strong><br>
+						<em>Debug.Print("Speed1=" + MD25.Speed1.ToString());</em>
+					</td>
 				</tr>
 				<tr>
 					<td><img src="images/Property_20x.png"></td>
 					<td><strong>Speed2Turn</strong></td>
-					<td>Dans le Mode 0 (le seul implémenté actuellement): Retourne la consigne de vitesse du moteur 2. Octet non signé.</td>
+					<td>Dans le Mode 0 (le seul implémenté actuellement): Retourne la consigne de vitesse du moteur 2. Octet non signé. 	<br><br>					
+						<strong>Exemple</strong><br>
+						<em>Debug.Print("Speed2=" + MD25.Speed2Turn.ToString());</em>
+					</td>
 				</tr>
 				<tr>
 					<td><img src="images/Property_20x.png"></td>
