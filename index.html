@@ -315,11 +315,11 @@ namespace NetduinoMD25
 					<td><strong>Speed1</strong></td>
 					<td>Fixe (à venir) ou retourne la consigne de vitesse du moteur 1. Octet non signé. <br> <strong>Note</strong><br>Selon le mode choisi, ce registre règle la vitesse
 						d'un moteur ou des deux. <br>En mode 0 ou 1, il règle la vitesse du moteur 1. Plus la valeur augmente, plus la fréquence
-						de rotation augmente. <br>Dans les modes 2 etu 3 ce registre contrôle la vitesse moyenne des deux moteurs.
+						de rotation augmente. <br>Dans les modes 2 et 3 il contrôle la vitesse moyenne des deux moteurs.
 						<br><br>
 						<strong>Exemple</strong><br>
 						// Pour connaître la consigne de vitesse du moteur 1 <br>
-						<em>Debug.Print("Speed1=" + MD25.Speed1.ToString());</em><br>
+						<em>Debug.Print("Speed1=" + MD25.Speed1.ToString());</em><br><br>
 						// Pour fixer la consigne de vitesse du moteur 1 dans le mode 0 <br>
 						<em>MD25.Speed1 = 140;</em>
 					</td>
