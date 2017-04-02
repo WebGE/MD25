@@ -311,7 +311,7 @@ namespace NetduinoMD25
 					<td><img src="images/Property_20x.png"></td>
 					<td><strong>Speed1</strong></td>
 					<td>
-						Fixe (à venir) ou retourne la consigne de vitesse du moteur 1 (mode 0, 1) ou des deux moteurs (mode 2,3). Octet non signé.
+						Fixe (à venir) ou retourne la consigne de vitesse du moteur 1 (mode 0, 1) ou des deux moteurs (mode 2,3). <br>Type : byte
 						<br><br>
 						<strong>Note</strong><br>
 						<ul>
@@ -334,7 +334,7 @@ namespace NetduinoMD25
 					<td><strong>Speed2Turn</strong></td>
 					<td>
 						Fixe (à venir) ou retourne la consigne de vitesse du moteur 2 (mode 0, 1) ou la consigne de direction du système déplacé par les deux moteurs (mode 2,3 : Turn).
-						Octet non signé.
+						<br>Type : byte
 						<br><br>
 						<strong>Note sur le mode Turn</strong><br> Selon la valeur du registre de vitesse (Speed1), le logiciel de la carte
 						MD25 détermine si la direction est directe ou inverse. <br>
@@ -372,7 +372,7 @@ namespace NetduinoMD25
 				<tr>
 					<td><img src="images/Property_20x.png"></td>
 					<td><strong>Battery</strong></td>
-					<td>Retourne la tension d'alimentation (x10) de la carte en (V). Octet non signé.<br><br>
+					<td>Retourne la tension d'alimentation (x10) de la carte en (V). <br>Type : byte<br><br>
 						<strong>Exemple</strong><br>
 						<em>Debug.Print("Tension=" + ((Single)MD25.Battery / 10).ToString("F1") + "V");</em>
 					</td>
@@ -380,7 +380,7 @@ namespace NetduinoMD25
 				<tr>
 					<td><img src="images/Property_20x.png"></td>
 					<td><strong>Current1</strong></td>
-					<td>Retourne l'intensité du moteur 1 (x10) en (A). Octet non signé.<br><br>
+					<td>Retourne l'intensité du moteur 1 (x10) en (A). <br>Type : byte<br><br>
 						<strong>Exemple</strong><br>
 						<em>Debug.Print("I_moteur 1=" + ((Single)MD25.Current1 / 10).ToString("F1") + "A");</em>
 					</td>
@@ -388,7 +388,7 @@ namespace NetduinoMD25
 				<tr>
 					<td><img src="images/Property_20x.png"></td>
 					<td><strong>Current2</strong></td>
-					<td>Retourne l'intensité du moteur 2 (x10) en (A). Octet non signé.<br><br>
+					<td>Retourne l'intensité du moteur 2 (x10) en (A). <br>Type : byte<br><br>
 						<strong>Exemple</strong><br>
 						<em>Debug.Print("I_moteur 2=" + ((Single)MD25.Current2 / 10).ToString("F1") + "A");</em>
 					</td>
@@ -396,7 +396,7 @@ namespace NetduinoMD25
 				<tr>
 					<td><img src="images/Property_20x.png"></td>
 					<td><strong>SoftRev</strong></td>
-					<td>Retourne le numéro de version du logiciel de la carte MD25. Octet non signé.<br><br>
+					<td>Retourne le numéro de version du logiciel de la carte MD25. <br>Type : byte<br><br>
 						<strong>Exemple</strong><br>
 						<em>Debug.Print("Vers.=" + MD25.SoftRev.ToString());</em>
 					</td>
@@ -405,7 +405,7 @@ namespace NetduinoMD25
 					<td><img src="images/Property_20x.png"></td>
 					
 					<td><strong>AccelerationRate</strong></td>
-					<td>En cours de rédaction <br> Fixe ou retourne l'accélération programmée lors d'un changement de vitesse. Octet non signé.<br><br>
+					<td>En cours de rédaction <br> Fixe ou retourne l'accélération programmée lors d'un changement de vitesse. <br>Type : byte<br><br>
 						<strong>Exemples</strong><br> // Pour connaître la valeur de l'accélération <br>
 						<em>Debug.Print("Acceleration=" + MD25.AccelerationRate.ToString());</em> <br><br> // Pour fixer la valeur de l'accélération
 						<br>
@@ -415,7 +415,7 @@ namespace NetduinoMD25
 				<tr>
 					<td><img src="images/Property_20x.png"></td>
 					<td><strong>Mode</strong></td>
-					<td>Fixe (à venir) ou retourne le mode de fonctionnement de la carte 0, 1, 2 ou 3. Octet non signé.<br><br>
+					<td>Fixe (à venir) ou retourne le mode de fonctionnement de la carte 0, 1, 2 ou 3. <br>Type : byte<br><br>
 						<strong>Exemples</strong><br> // Pour connaitre le mode de fonctionnement de la carte <br>
 						<em>Debug.Print(Mode=" + MD25.Mode.ToString());</em> <br><br>
 						// Pour fixer le mode de fonctionnement de la carte <br>
@@ -425,7 +425,7 @@ namespace NetduinoMD25
 				<tr>
 					<td><img src="images/Property_20x.png"></td>
 					<td><strong>Command</strong></td>					
-					<td>En cours de rédaction <br> Fixe ou retourne le contenu du registre de commande. Octet non signé.<br><br>
+					<td>En cours de rédaction <br> Fixe ou retourne le contenu du registre de commande. <br>Type : byte<br><br>
 						<strong>Exemple</strong><br>
 						<em>Debug.Print("" + );</em>
 					</td>
