@@ -409,7 +409,7 @@ namespace NetduinoMD25
 						<strong>Exemples</strong><br> // Pour connaître la valeur de l'accélération <br>
 						<em>Debug.Print("Acceleration=" + MD25.AccelerationRate.ToString());</em> <br><br> // Pour fixer la valeur de l'accélération
 						<br>
-						<em>byte MD25.AccAccelerationRate = 1;</em>
+						<em>MD25.AccAccelerationRate = 1;</em>
 					</td>
 				</tr>
 				<tr>
@@ -419,7 +419,7 @@ namespace NetduinoMD25
 						<strong>Exemples</strong><br> // Pour connaitre le mode de fonctionnement de la carte <br>
 						<em>Debug.Print(Mode=" + MD25.Mode.ToString());</em> <br><br>
 						// Pour fixer le mode de fonctionnement de la carte <br>
-						A venir
+						<em>MD25.Mode = 2;</em>
 					</td>
 				</tr>
 				<tr>
@@ -433,7 +433,7 @@ namespace NetduinoMD25
 				<tr>
 					<td><img src="images/Property_20x.png"></td>
 					<td><strong>TransactionTimeOut</strong></td>
-					<td>Fixe ou retourne le temps (en ms) accordé à la transaction avant la génération d'une System.IO.Exception. 1000ms par
+					<td>Fixe ou retourne le temps (en ms) accordé à la transaction avant la génération d'une exception System.IO.Exception. 1000ms par
 						défaut. <br> Type : ushort
 						<br><br>
 						<strong>Exemples</strong><br> // Pour régler la durée maximum d'une transaction à 200ms. <br>
