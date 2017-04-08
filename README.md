@@ -53,6 +53,10 @@ This class is also in the <a href="https://www.nuget.org/packages/WEBGE.Microtoo
 ----------------------------
 I²C Bus, Motor Drive, Netduino, FEZ, PANDA, COBRA, C#, NETMF, Visual Studio.
 
+<strong>Tested on</strong>
+-------------------
+Fez Panda III, Netduino plus 2
+
 <strong>Todo list</strong>
 -------------------
 Set speed1, speed2Turn, mode registers <br>
