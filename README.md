@@ -55,7 +55,7 @@ I²C Bus, Motor Drive, Netduino, FEZ, PANDA, COBRA, C#, NETMF, Visual Studio.
 
 <strong>Tested on</strong>
 -------------------
-Fez Panda III, Netduino plus 2
+Fez Panda III, Netduino plus 2, Netduino 3
 
 <strong>Todo list</strong>
 -------------------
