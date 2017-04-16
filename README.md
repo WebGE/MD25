@@ -64,10 +64,14 @@ Change I2C address
 
 <strong>To get started</strong>
 --------------------
-See <a href="http://webge.github.io/MD25/" target="_blank">MD25 GitHub Page</a>.
+See <a href="http://webge.github.io/MD25/" target="_blank">MD25 GitHub Page</a> (in French).
+
+<strong>Wiki</strong>
+--------------------
+See <a href="https://csharpembarquenetduino.wikispaces.com/Home" target="_blank">Netduino et FEZ</a> (in French).
 
 <strong>Project site</strong>
 --------------------
-<a href ="https://csharpembarquenetduino.wikispaces.com/6.+MicroToolsKit+library">MicroToolsKit library</a>
+<a href ="https://csharpembarquenetduino.wikispaces.com/6.+MicroToolsKit+library">MicroToolsKit library</a> (in English).
 <hr>
 <strong>Maintened by</strong> <a href="mailto:philippemariano@gmail.com">WebGe</a>
