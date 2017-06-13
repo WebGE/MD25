@@ -19,19 +19,19 @@ namespace testMicrotoolsKit
                 /// <summary>
                 /// Transaction time out = 1s before throwing System.IO.IOException 
                 /// </summary>
-                private UInt16 transactionTimeOut = 1000;
+                private UInt16 _transactionTimeOut = 1000;
 
                 /// <summary>
                 /// Slave Adress and frequency configuration
                 /// </summary>
-                private I2CDevice.Configuration config;
+                private I2CDevice.Configuration _config;
 
-                private I2CDevice i2CBus;
+                private I2CDevice _i2CBus;
 
                 /// <summary>
                 /// 7-bit Slave Adress
                 /// </summary>
-                private UInt16 sla;
+                private UInt16 _sla;
 
                 /// <summary>
                 /// Writable Registers
@@ -79,22 +79,22 @@ namespace testMicrotoolsKit
                 }
 
                 // MD2x Registers
-                private Byte speed1 = 0, speed2Turn = 0;
-                private Byte softrev = 0;
-                private Byte battery = 0;
-                private Byte current1 = 0, current2 = 0;
-                private Byte acceleration = 0;
-                private Byte mode = 0;
-                private Byte command = 0;
-                private Int32 encoder1 = 0, encoder2 = 0;
+                private Byte _speed1 = 0, _speed2Turn = 0;
+                private Byte _softrev = 0;
+                private Byte _battery = 0;
+                private Byte _current1 = 0, _current2 = 0;
+                private Byte _acceleration = 0;
+                private Byte _mode = 0;
+                private Byte _command = 0;
+                private Int32 _encoder1 = 0, _encoder2 = 0;
 
                 /// <summary>
                 /// This constructor assumes the default factory Slave Address = 0x58 and default bus frequency = 100Khz
                 /// </summary>
                 public MotorControlMD2x()
                 {
-                    sla = 0x58;
-                    config = new I2CDevice.Configuration(0x58, 100);
+                    _sla = 0x58;
+                    _config = new I2CDevice.Configuration(0x58, 100);
                 }
 
                 /// <summary>
@@ -103,8 +103,8 @@ namespace testMicrotoolsKit
                 /// <param name="SLA">MD25(@=0x58 to 0x5F), 0x58 by default (see datasheet)</param>
                 public MotorControlMD2x(UInt16 SLA)
                 {
-                    sla = SLA;
-                    config = new I2CDevice.Configuration(SLA, 100);
+                    _sla = SLA;
+                    _config = new I2CDevice.Configuration(SLA, 100);
                 }
 
                 /// <summary>
@@ -114,8 +114,8 @@ namespace testMicrotoolsKit
                 /// <param name="Frequency">100khz to 400kHz, 100kHz by default</param>
                 public MotorControlMD2x(UInt16 SLA, UInt16 Frequency)
                 {
-                    sla = SLA;
-                    config = new I2CDevice.Configuration(SLA, Frequency);
+                    _sla = SLA;
+                    _config = new I2CDevice.Configuration(SLA, Frequency);
                 }
 
                 /// <summary>
@@ -123,7 +123,7 @@ namespace testMicrotoolsKit
                 /// </summary>
                 public Byte Speed1
                 {
-                    get { GetAllRegisters(); return speed1; }
+                    get { GetAllRegisters(); return _speed1; }
                 }
 
                 /// <summary>
@@ -131,7 +131,7 @@ namespace testMicrotoolsKit
                 /// </summary>
                 public Byte Speed2Turn
                 {
-                    get { GetAllRegisters(); return speed2Turn; }
+                    get { GetAllRegisters(); return _speed2Turn; }
                 }
 
                 /// <summary>
@@ -140,7 +140,7 @@ namespace testMicrotoolsKit
                 public Int32 Encoder1
                 {
                     get
-                    { GetAllRegisters(); return encoder1; }
+                    { GetAllRegisters(); return _encoder1; }
                 }
 
                 /// <summary>
@@ -148,7 +148,7 @@ namespace testMicrotoolsKit
                 /// </summary>
                 public Int32 Encoder2
                 {
-                    get { GetAllRegisters(); return encoder2; }
+                    get { GetAllRegisters(); return _encoder2; }
                 }
 
                 /// <summary>
@@ -156,7 +156,7 @@ namespace testMicrotoolsKit
                 /// </summary>
                 public Byte Battery
                 {
-                    get { GetAllRegisters(); return battery; }
+                    get { GetAllRegisters(); return _battery; }
                 }
 
                 /// <summary>
@@ -164,7 +164,7 @@ namespace testMicrotoolsKit
                 /// </summary>
                 public Byte Current1
                 {
-                    get { GetAllRegisters(); return current1; }
+                    get { GetAllRegisters(); return _current1; }
                 }
 
                 /// <summary>
@@ -172,7 +172,7 @@ namespace testMicrotoolsKit
                 /// </summary>         
                 public Byte Current2
                 {
-                    get { GetAllRegisters(); return current2; }
+                    get { GetAllRegisters(); return _current2; }
                 }
 
                 /// <summary>
@@ -180,7 +180,7 @@ namespace testMicrotoolsKit
                 /// </summary>
                 public Byte SoftRev
                 {
-                    get { GetAllRegisters(); return softrev; }
+                    get { GetAllRegisters(); return _softrev; }
                 }
 
                 /// <summary>
@@ -200,7 +200,7 @@ namespace testMicrotoolsKit
                             SetRegister(WRegister.AccelerationRate, value);
                         }
                     }
-                    get { GetAllRegisters(); return acceleration; }
+                    get { GetAllRegisters(); return _acceleration; }
                 }
 
                 /// <summary>
@@ -208,7 +208,7 @@ namespace testMicrotoolsKit
                 /// </summary>
                 public Byte Mode
                 {
-                    get { GetAllRegisters(); return mode; }
+                    get { GetAllRegisters(); return _mode; }
                 }
 
                 /// <summary>
@@ -225,7 +225,7 @@ namespace testMicrotoolsKit
                 public Byte Command
                 {
                     set { SetRegister(WRegister.Command, value); }
-                    get { GetAllRegisters(); return command; }
+                    get { GetAllRegisters(); return _command; }
                 }
 
                 /// <summary>
@@ -238,12 +238,12 @@ namespace testMicrotoolsKit
                 {
                     get
                     {
-                        return transactionTimeOut;
+                        return _transactionTimeOut;
                     }
                     
                     set
                     {
-                        transactionTimeOut = value;
+                        _transactionTimeOut = value;
                     }
                 }
 
@@ -257,11 +257,11 @@ namespace testMicrotoolsKit
                     byte[] outbuffer = new byte[] { (byte)Register, value };
                     I2CDevice.I2CTransaction writeTransaction = I2CDevice.CreateWriteTransaction(outbuffer);
                     I2CDevice.I2CTransaction[] T_WriteByte = new I2CDevice.I2CTransaction[] { writeTransaction };
-                    i2CBus = new I2CDevice(config);
-                    int transferred = i2CBus.Execute(T_WriteByte, transactionTimeOut);
-                    i2CBus.Dispose();
+                    _i2CBus = new I2CDevice(_config);
+                    int transferred = _i2CBus.Execute(T_WriteByte, _transactionTimeOut);
+                    _i2CBus.Dispose();
                     if (transferred < outbuffer.Length)
-                        throw new System.IO.IOException("I2CBus error:" + sla.ToString());
+                        throw new System.IO.IOException("I2CBus error:" + _sla.ToString());
                 }
 
                 /// <summary>
@@ -274,20 +274,20 @@ namespace testMicrotoolsKit
                     byte[] inBuffer = new byte[17];
                     I2CDevice.I2CReadTransaction readTransaction = I2CDevice.CreateReadTransaction(inBuffer);
                     I2CDevice.I2CTransaction[] XAction = new I2CDevice.I2CTransaction[] { writeTransaction, readTransaction };
-                    i2CBus = new I2CDevice(config); // Connexion virtuelle de la carte MD2x au bus I2C
-                    int transferred = i2CBus.Execute(XAction, transactionTimeOut);
-                    i2CBus.Dispose();
+                    _i2CBus = new I2CDevice(_config); // Connexion virtuelle de la carte MD2x au bus I2C
+                    int transferred = _i2CBus.Execute(XAction, _transactionTimeOut);
+                    _i2CBus.Dispose();
                     if (transferred != 0)
                     {
-                        speed1 = inBuffer[0]; speed2Turn = inBuffer[1]; battery = inBuffer[10]; current1 = inBuffer[11]; current2 = inBuffer[12];
-                        softrev = inBuffer[13]; acceleration = inBuffer[14]; mode = inBuffer[15]; command = inBuffer[16];
+                        _speed1 = inBuffer[0]; _speed2Turn = inBuffer[1]; _battery = inBuffer[10]; _current1 = inBuffer[11]; _current2 = inBuffer[12];
+                        _softrev = inBuffer[13]; _acceleration = inBuffer[14]; _mode = inBuffer[15]; _command = inBuffer[16];
 
-                        encoder1 = (Int32)(inBuffer[2] << 24) | (Int32)(inBuffer[3] << 16) | (Int32)(inBuffer[4] << 8) | (Int32)(inBuffer[5]);
-                        encoder2 = (Int32)(inBuffer[6] << 24) | (Int32)(inBuffer[7] << 16) | (Int32)(inBuffer[8] << 8) | (Int32)(inBuffer[9]);
+                        _encoder1 = (Int32)(inBuffer[2] << 24) | (Int32)(inBuffer[3] << 16) | (Int32)(inBuffer[4] << 8) | (Int32)(inBuffer[5]);
+                        _encoder2 = (Int32)(inBuffer[6] << 24) | (Int32)(inBuffer[7] << 16) | (Int32)(inBuffer[8] << 8) | (Int32)(inBuffer[9]);
                     }
                     else
                     {
-                        throw new System.IO.IOException("I2CBus error:" + sla.ToString());
+                        throw new System.IO.IOException("I2CBus error:" + _sla.ToString());
                     }
                 }
 
@@ -314,16 +314,16 @@ namespace testMicrotoolsKit
                 public void StopMotor()
                 {
                     GetAllRegisters();
-                    if ((mode == (byte)ModeRegister.Mode0) || (mode == (byte)ModeRegister.Mode2))
+                    if ((_mode == (byte)ModeRegister.Mode0) || (_mode == (byte)ModeRegister.Mode2))
                     {
-                        speed1 = 128; speed2Turn = 128;
+                        _speed1 = 128; _speed2Turn = 128;
                     }
-                    else if ((mode == (byte)ModeRegister.Mode1) || (mode == (byte)ModeRegister.Mode3))
+                    else if ((_mode == (byte)ModeRegister.Mode1) || (_mode == (byte)ModeRegister.Mode3))
                     {
-                        speed1 = 0; speed2Turn = 0;
+                        _speed1 = 0; _speed2Turn = 0;
                     }
-                    SetRegister(WRegister.Speed1, speed1);
-                    SetRegister(WRegister.Speed2Turn, speed2Turn);
+                    SetRegister(WRegister.Speed1, _speed1);
+                    SetRegister(WRegister.Speed2Turn, _speed2Turn);
                 }
 
                 /// <summary>
