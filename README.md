@@ -69,7 +69,7 @@ Change I2C address
 
 <strong>Wiki</strong>
 --------------------
--<a href="https://csharpembarquenetduino.wikispaces.com/Home" target="_blank">Netduino et FEZ</a> (in French).
+- <a href="https://csharpembarquenetduino.wikispaces.com/Home" target="_blank">Netduino et FEZ</a> (in French).
 
 <strong>News feed on Google+</strong>
 --------------------
