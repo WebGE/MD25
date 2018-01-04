@@ -13,7 +13,7 @@ This class is also in the <a href="https://www.nuget.org/packages/WEBGE.Microtoo
 
 <strong>Hardware</strong>
 ---------------------
-<strong> Targets </strong>: Netduino, Netduino plus 2, Netduino 3, FEZ PANDA 3 et COBRA 3.
+<strong> Targets </strong>: Netduino, Netduino2 plus, Netduino 3, FEZ PANDA 3 et COBRA 3.
 
 <strong>Software</strong>
 ---------------------
@@ -56,7 +56,7 @@ I²C Bus, Motor Drive, Netduino, FEZ, PANDA, COBRA, C#, NETMF, Visual Studio.
 
 <strong>Tested on</strong>
 -------------------
-Fez Panda III, Netduino plus 2, Netduino 3
+Fez Panda III, Netduino2 plus, Netduino 3
 
 <strong>Todo list</strong>
 -------------------
@@ -65,14 +65,18 @@ Change I2C address
 
 <strong>To get started</strong>
 --------------------
-See <a href="http://webge.github.io/MD25/" target="_blank">MD25 GitHub Page</a> (in French).
+- <a href="http://webge.github.io/MD25/" target="_blank">MD25 GitHub Page</a> (in French).
 
 <strong>Wiki</strong>
 --------------------
-See <a href="https://csharpembarquenetduino.wikispaces.com/Home" target="_blank">Netduino et FEZ</a> (in French).
+-<a href="https://csharpembarquenetduino.wikispaces.com/Home" target="_blank">Netduino et FEZ</a> (in French).
+
+<strong>News feed on Google+</strong>
+--------------------
+- <a href="https://plus.google.com/collection/oaaJX" target="_blank">Netduino et FEZ</a> (in French).
 
 <strong>Project site</strong>
 --------------------
-<a href ="https://csharpembarquenetduino.wikispaces.com/6.+MicroToolsKit+library">MicroToolsKit library</a> (in English).
+- <a href ="https://csharpembarquenetduino.wikispaces.com/6.+MicroToolsKit+library">MicroToolsKit library</a> (in English).
 <hr>
 <strong>Maintened by</strong> <a href="mailto:philippemariano@gmail.com">WebGe</a>
