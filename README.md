@@ -77,6 +77,6 @@ Change I2C address
 
 <strong>Project site</strong>
 --------------------
-- <a href ="http://webge.dyndns-server.com/dokuwiki/doku.php?id=netmf43:microtoolskit">dokuwiki</a> (in English).
+- <a href ="http://webge.dyndns-server.com/dokuwiki/doku.php?id=netmf43:microtoolskit">MicroToolsKit library</a> (in English).
 <hr>
 <strong>Maintened by</strong> <a href="mailto:philippemariano@gmail.com">WebGe</a>
