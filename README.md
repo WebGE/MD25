@@ -67,16 +67,15 @@ Change I2C address
 --------------------
 - <a href="http://webge.github.io/MD25/" target="_blank">MD25 GitHub Page</a> (in French).
 
+<strong>Feed on Google+</strong>
+--------------------
+- <a href="https://plus.google.com/collection/oaaJX" target="_blank">C# embarqué et .NetMF v4.3 : Netduino et GHI FEZ</a> (in French).
+
 <strong>Wiki</strong>
 --------------------
-- <a href="https://csharpembarquenetduino.wikispaces.com/Home" target="_blank">Netduino et FEZ</a> (in French).
-
-<strong>News feed on Google+</strong>
---------------------
-- <a href="https://plus.google.com/collection/oaaJX" target="_blank">Netduino et FEZ</a> (in French).
+- <a href="http://webge.dyndns-server.com/dokuwiki/doku.php?id=netmf43:accueilnetmf" target="_blank">C# embarqué et .NetMF v4.3 pour les cartes Netduino et GHI FEZ</a> (in French).
 
 <strong>Project site</strong>
 --------------------
-- <a href ="http://webge.dyndns-server.com/dokuwiki/doku.php?id=netmf43:microtoolskit">MicroToolsKit library</a> (in English).
-<hr>
+- <a href ="http://webge.dyndns-server.com/dokuwiki/doku.php?id=netmf43:6_microtoolskit" target="_blank">MicroToolsKit library</a> (in English).
 <strong>Maintened by</strong> <a href="mailto:philippemariano@gmail.com">WebGe</a>
