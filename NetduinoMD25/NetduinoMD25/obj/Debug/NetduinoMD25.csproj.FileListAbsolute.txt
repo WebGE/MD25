@@ -1,0 +1,70 @@
+c:\users\pemartin\documents\visual studio 2010\Projects\NetduinoMD25\NetduinoMD25\bin\Debug\le\NetduinoMD25.exe
+c:\users\pemartin\documents\visual studio 2010\Projects\NetduinoMD25\NetduinoMD25\bin\Debug\be\NetduinoMD25.exe
+c:\users\pemartin\documents\visual studio 2010\Projects\NetduinoMD25\NetduinoMD25\bin\Debug\le\NetduinoMD25.pdb
+c:\users\pemartin\documents\visual studio 2010\Projects\NetduinoMD25\NetduinoMD25\bin\Debug\be\NetduinoMD25.pdb
+c:\users\pemartin\documents\visual studio 2010\Projects\NetduinoMD25\NetduinoMD25\bin\Debug\NetduinoMD25.exe
+c:\users\pemartin\documents\visual studio 2010\Projects\NetduinoMD25\NetduinoMD25\bin\Debug\NetduinoMD25.pdb
+c:\users\pemartin\documents\visual studio 2010\Projects\NetduinoMD25\NetduinoMD25\bin\Debug\le\NetduinoMD25.pe
+c:\users\pemartin\documents\visual studio 2010\Projects\NetduinoMD25\NetduinoMD25\bin\Debug\le\NetduinoMD25.pdbx
+c:\users\pemartin\documents\visual studio 2010\Projects\NetduinoMD25\NetduinoMD25\bin\Debug\be\NetduinoMD25.pe
+c:\users\pemartin\documents\visual studio 2010\Projects\NetduinoMD25\NetduinoMD25\bin\Debug\be\NetduinoMD25.pdbx
+c:\users\pemartin\documents\visual studio 2010\Projects\NetduinoMD25\NetduinoMD25\bin\Debug\LE\SecretLabs.NETMF.Hardware.pe
+c:\users\pemartin\documents\visual studio 2010\Projects\NetduinoMD25\NetduinoMD25\bin\Debug\LE\SecretLabs.NETMF.Hardware.Netduino.pe
+c:\users\pemartin\documents\visual studio 2010\Projects\NetduinoMD25\NetduinoMD25\bin\Debug\BE\SecretLabs.NETMF.Hardware.pe
+c:\users\pemartin\documents\visual studio 2010\Projects\NetduinoMD25\NetduinoMD25\bin\Debug\BE\SecretLabs.NETMF.Hardware.Netduino.pe
+c:\users\pemartin\documents\visual studio 2010\Projects\NetduinoMD25\NetduinoMD25\bin\Debug\LE\SecretLabs.NETMF.Hardware.pdbx
+c:\users\pemartin\documents\visual studio 2010\Projects\NetduinoMD25\NetduinoMD25\bin\Debug\LE\SecretLabs.NETMF.Hardware.Netduino.pdbx
+c:\users\pemartin\documents\visual studio 2010\Projects\NetduinoMD25\NetduinoMD25\bin\Debug\BE\SecretLabs.NETMF.Hardware.pdbx
+c:\users\pemartin\documents\visual studio 2010\Projects\NetduinoMD25\NetduinoMD25\bin\Debug\BE\SecretLabs.NETMF.Hardware.Netduino.pdbx
+c:\users\pemartin\documents\visual studio 2010\Projects\NetduinoMD25\NetduinoMD25\bin\Debug\SecretLabs.NETMF.Hardware.dll
+c:\users\pemartin\documents\visual studio 2010\Projects\NetduinoMD25\NetduinoMD25\bin\Debug\SecretLabs.NETMF.Hardware.Netduino.dll
+c:\users\pemartin\documents\visual studio 2010\Projects\NetduinoMD25\NetduinoMD25\bin\Debug\SecretLabs.NETMF.Hardware.pdb
+c:\users\pemartin\documents\visual studio 2010\Projects\NetduinoMD25\NetduinoMD25\bin\Debug\SecretLabs.NETMF.Hardware.Netduino.pdb
+c:\users\pemartin\documents\visual studio 2010\Projects\NetduinoMD25\NetduinoMD25\obj\Debug\be\NetduinoMD25.pe
+c:\users\pemartin\documents\visual studio 2010\Projects\NetduinoMD25\NetduinoMD25\obj\Debug\be\NetduinoMD25.pdbx
+c:\users\pemartin\documents\visual studio 2010\Projects\NetduinoMD25\NetduinoMD25\obj\Debug\le\NetduinoMD25.pe
+c:\users\pemartin\documents\visual studio 2010\Projects\NetduinoMD25\NetduinoMD25\obj\Debug\le\NetduinoMD25.pdbx
+c:\users\pemartin\documents\visual studio 2010\Projects\NetduinoMD25\NetduinoMD25\obj\Debug\NetduinoMD25.exe
+c:\users\pemartin\documents\visual studio 2010\Projects\NetduinoMD25\NetduinoMD25\obj\Debug\NetduinoMD25.pdb
+C:\Users\pemartin\documents\visual studio 2010\Projects\NetduinoMD25\NetduinoMD25\obj\Debug\TinyCLR_DebugReferences.cache
+F:\Travail_en_cours\1c_Embedded_C#\3_NetDuino\4_Code_C#\Exemples_prog_Eleve_MSVS2010\NetduinoMD25\NetduinoMD25\bin\Debug\le\NetduinoMD25.exe
+F:\Travail_en_cours\1c_Embedded_C#\3_NetDuino\4_Code_C#\Exemples_prog_Eleve_MSVS2010\NetduinoMD25\NetduinoMD25\bin\Debug\be\NetduinoMD25.exe
+F:\Travail_en_cours\1c_Embedded_C#\3_NetDuino\4_Code_C#\Exemples_prog_Eleve_MSVS2010\NetduinoMD25\NetduinoMD25\bin\Debug\le\NetduinoMD25.pdb
+F:\Travail_en_cours\1c_Embedded_C#\3_NetDuino\4_Code_C#\Exemples_prog_Eleve_MSVS2010\NetduinoMD25\NetduinoMD25\bin\Debug\be\NetduinoMD25.pdb
+F:\Travail_en_cours\1c_Embedded_C#\3_NetDuino\4_Code_C#\Exemples_prog_Eleve_MSVS2010\NetduinoMD25\NetduinoMD25\bin\Debug\NetduinoMD25.exe
+F:\Travail_en_cours\1c_Embedded_C#\3_NetDuino\4_Code_C#\Exemples_prog_Eleve_MSVS2010\NetduinoMD25\NetduinoMD25\bin\Debug\NetduinoMD25.pdb
+F:\Travail_en_cours\1c_Embedded_C#\3_NetDuino\4_Code_C#\Exemples_prog_Eleve_MSVS2010\NetduinoMD25\NetduinoMD25\bin\Debug\le\NetduinoMD25.pe
+F:\Travail_en_cours\1c_Embedded_C#\3_NetDuino\4_Code_C#\Exemples_prog_Eleve_MSVS2010\NetduinoMD25\NetduinoMD25\bin\Debug\le\NetduinoMD25.pdbx
+F:\Travail_en_cours\1c_Embedded_C#\3_NetDuino\4_Code_C#\Exemples_prog_Eleve_MSVS2010\NetduinoMD25\NetduinoMD25\bin\Debug\be\NetduinoMD25.pe
+F:\Travail_en_cours\1c_Embedded_C#\3_NetDuino\4_Code_C#\Exemples_prog_Eleve_MSVS2010\NetduinoMD25\NetduinoMD25\bin\Debug\be\NetduinoMD25.pdbx
+F:\Travail_en_cours\1c_Embedded_C#\3_NetDuino\4_Code_C#\Exemples_prog_Eleve_MSVS2010\NetduinoMD25\NetduinoMD25\obj\Debug\TinyCLR_DebugReferences.cache
+F:\Travail_en_cours\1c_Embedded_C#\3_NetDuino\4_Code_C#\Exemples_prog_Eleve_MSVS2010\NetduinoMD25\NetduinoMD25\obj\Debug\be\NetduinoMD25.pe
+F:\Travail_en_cours\1c_Embedded_C#\3_NetDuino\4_Code_C#\Exemples_prog_Eleve_MSVS2010\NetduinoMD25\NetduinoMD25\obj\Debug\be\NetduinoMD25.pdbx
+F:\Travail_en_cours\1c_Embedded_C#\3_NetDuino\4_Code_C#\Exemples_prog_Eleve_MSVS2010\NetduinoMD25\NetduinoMD25\obj\Debug\le\NetduinoMD25.pe
+F:\Travail_en_cours\1c_Embedded_C#\3_NetDuino\4_Code_C#\Exemples_prog_Eleve_MSVS2010\NetduinoMD25\NetduinoMD25\obj\Debug\le\NetduinoMD25.pdbx
+F:\Travail_en_cours\1c_Embedded_C#\3_NetDuino\4_Code_C#\Exemples_prog_Eleve_MSVS2010\NetduinoMD25\NetduinoMD25\obj\Debug\NetduinoMD25.exe
+F:\Travail_en_cours\1c_Embedded_C#\3_NetDuino\4_Code_C#\Exemples_prog_Eleve_MSVS2010\NetduinoMD25\NetduinoMD25\obj\Debug\NetduinoMD25.pdb
+C:\Users\Philippe\Documents\GitHub\MD25\NetduinoMD25\NetduinoMD25\bin\Debug\le\NetduinoMD25.exe
+C:\Users\Philippe\Documents\GitHub\MD25\NetduinoMD25\NetduinoMD25\bin\Debug\be\NetduinoMD25.exe
+C:\Users\Philippe\Documents\GitHub\MD25\NetduinoMD25\NetduinoMD25\bin\Debug\le\NetduinoMD25.pdb
+C:\Users\Philippe\Documents\GitHub\MD25\NetduinoMD25\NetduinoMD25\bin\Debug\be\NetduinoMD25.pdb
+C:\Users\Philippe\Documents\GitHub\MD25\NetduinoMD25\NetduinoMD25\bin\Debug\NetduinoMD25.exe
+C:\Users\Philippe\Documents\GitHub\MD25\NetduinoMD25\NetduinoMD25\bin\Debug\NetduinoMD25.pdb
+C:\Users\Philippe\Documents\GitHub\MD25\NetduinoMD25\NetduinoMD25\bin\Debug\le\NetduinoMD25.pe
+C:\Users\Philippe\Documents\GitHub\MD25\NetduinoMD25\NetduinoMD25\bin\Debug\le\NetduinoMD25.pdbx
+C:\Users\Philippe\Documents\GitHub\MD25\NetduinoMD25\NetduinoMD25\bin\Debug\be\NetduinoMD25.pe
+C:\Users\Philippe\Documents\GitHub\MD25\NetduinoMD25\NetduinoMD25\bin\Debug\be\NetduinoMD25.pdbx
+C:\Users\Philippe\Documents\GitHub\MD25\NetduinoMD25\NetduinoMD25\bin\Debug\LE\DriverMD2x.pe
+C:\Users\Philippe\Documents\GitHub\MD25\NetduinoMD25\NetduinoMD25\bin\Debug\BE\DriverMD2x.pe
+C:\Users\Philippe\Documents\GitHub\MD25\NetduinoMD25\NetduinoMD25\bin\Debug\LE\DriverMD2x.pdbx
+C:\Users\Philippe\Documents\GitHub\MD25\NetduinoMD25\NetduinoMD25\bin\Debug\BE\DriverMD2x.pdbx
+C:\Users\Philippe\Documents\GitHub\MD25\NetduinoMD25\NetduinoMD25\bin\Debug\DriverMD2x.dll
+C:\Users\Philippe\Documents\GitHub\MD25\NetduinoMD25\NetduinoMD25\bin\Debug\DriverMD2x.pdb
+C:\Users\Philippe\Documents\GitHub\MD25\NetduinoMD25\NetduinoMD25\obj\Debug\NetduinoMD25.csprojResolveAssemblyReference.cache
+C:\Users\Philippe\Documents\GitHub\MD25\NetduinoMD25\NetduinoMD25\obj\Debug\TinyCLR_DebugReferences.cache
+C:\Users\Philippe\Documents\GitHub\MD25\NetduinoMD25\NetduinoMD25\obj\Debug\be\NetduinoMD25.pe
+C:\Users\Philippe\Documents\GitHub\MD25\NetduinoMD25\NetduinoMD25\obj\Debug\be\NetduinoMD25.pdbx
+C:\Users\Philippe\Documents\GitHub\MD25\NetduinoMD25\NetduinoMD25\obj\Debug\le\NetduinoMD25.pe
+C:\Users\Philippe\Documents\GitHub\MD25\NetduinoMD25\NetduinoMD25\obj\Debug\le\NetduinoMD25.pdbx
+C:\Users\Philippe\Documents\GitHub\MD25\NetduinoMD25\NetduinoMD25\obj\Debug\NetduinoMD25.exe
+C:\Users\Philippe\Documents\GitHub\MD25\NetduinoMD25\NetduinoMD25\obj\Debug\NetduinoMD25.pdb
