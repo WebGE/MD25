@@ -17,8 +17,10 @@
 		<header class="inner">
 			<a id="forkme_banner" href="https://github.com/WebGE/MD25">View on GitHub</a>
 			<h1 id="project_title">MD25 - Dual 12Volt 2.8Amp H Bridge Motor Drive </h1>
-			<h2 id="project_tagline">Description de la classe <strong><em>MD25</em></strong> développée en C# sous .NETMF 4.3 pour les cartes Netduino et FEZ
-				(PANDA, COBRA...)</h2>
+			<h2 id="project_tagline">Description de la classe
+				<strong>
+					<em>MD25</em>
+				</strong> développée en C# sous .NETMF 4.3 pour les cartes Netduino et FEZ (PANDA, COBRA...)</h2>
 			<section id="downloads">
 				<a class="zip_download_link" href="https://github.com/WebGE/MD25/zipball/master">Download this project as a .zip file</a>
 				<a class="tar_download_link" href="https://github.com/WebGE/MD25/tarball/master">Download this project as a tar.gz file</a>
@@ -35,25 +37,42 @@
 				<li>LE MATERIEL
 					<ol>
 						<li>La carte MD25 - Dual 12Volt 2.8Amp H Bridge Motor Drive</li>
-						<li><a href="#DUINO">Les cartes Netduino</a></li>
-						<li><a href="#FEZ">Les cartes FEZ</a> </li>
+						<li>
+							<a href="#DUINO">Les cartes Netduino</a>
+						</li>
+						<li>
+							<a href="#FEZ">Les cartes FEZ</a>
+						</li>
 					</ol>
 				</li>
-				<li><a href="#LOG">LE LOGICIEL</a>
+				<li>
+					<a href="#LOG">LE LOGICIEL</a>
 					<ol>
-						<li><a href="#REP">Contenu du répertoire proposé au téléchargement</a></li>
-						<li><a href="#NUGET">Le NuGet MicroToolsKit</a></li>
-						<li><a href="#WIKI">Le wiki .NetMF v4.3</a></li>
-						<li><a href="#DESC">Description et utilisation de la classe MD25</a></li>
+						<li>
+							<a href="#REP">Contenu du répertoire proposé au téléchargement</a>
+						</li>
+						<li>
+							<a href="#NUGET">Le NuGet MicroToolsKit</a>
+						</li>
+						<li>
+							<a href="#WIKI">Le wiki .NetMF v4.3</a>
+						</li>
+						<li>
+							<a href="#DESC">Description et utilisation de la classe MD25</a>
+						</li>
 					</ol>
 				</li>
 				<li>LES FASCICULES
 					<ol>
-						<li><a href="https://csharpembarquenetduino.wikispaces.com/5a.+Les+fascicules+d%27exemples++cod%C3%A9s+en+CSharp+pour+la+carte+Netduino" target="_blank">Exemples de code pour les cartes Netduino</a></li>
-						<li><a href="https://csharpembarquenetduino.wikispaces.com/5b.+Le+fascicule+d%27exemples++cod%C3%A9s+en+CSharp+pour+les+cartes+Fez+%28PANDA+3%2C+etc%29" target="_blank">Exemples de code pour les cartes FEZ</a> </li>
+						<li>
+							<a href="http://webge.dyndns-server.com/dokuwiki/doku.php?id=netmf43:accueilnetmf" target="_blank">Exemples codés en C# pour les cartes Netduino et Fez (Panda 3, BrainPad)</a>
+						</li>
 					</ol>
 				</li>
-				<li><a href="https://csharpembarquenetduino.wikispaces.com/6.+MicroToolsKit+library" target="_blank">La page du projet MicroToolsKit</a></li>
+				<li>
+					<a href="http://webge.dyndns-server.com/dokuwiki/doku.php?id=netmf43:6_microtoolskit" target="_blank">La page du projet MicroToolsKit</a>
+				</li>
+
 			</ol>
 			<hr>
 			<h3>1. LE MATERIEL</h3>
@@ -61,17 +80,33 @@
 			<h4>1.1 La carte MD25 - Dual 12Volt 2.8Amp H Bridge Motor Drive</h4>
 			<hr>
 			<ul>
-				<li><strong>Présentation</strong></li>
-				<p>Destinée à être commandée par un microcontrôleur au moyen d'une liaison série (niveau logique 0 - 5 V) ou via un <strong>bus I2C™</strong>,
-					cette platine électronique intègre un <strong>double pont en "H"</strong> permettant le pilotage indépendant de <strong>2 moteurs à courant continu avec encodeur</strong>					(consommation: 2,5 A max. par moteur).<br> Des ordres simples permettent de définir le sens de rotation ainsi que la
-					vitesse des moteurs, de lire les informations en provenance des encodeurs, de lire les valeurs de la tension et du courant
-					consommé par les moteurs, de connaître leur vitesse de rotation, de définir les accélérations, etc...</p>
-				<p align="center"><img src="images/md25connection.png"></p>
-				<li><strong>Alimentation :</strong> 12 Vcc (un régulateur 5 Vcc intégré délivre 300 mA pour l’électronique de commande externe).</li>
-				<li><strong>Possibilités: </strong>Plusieurs platines peuvent être pilotées en même temps via un bus I2C™</li>
-				<li><strong>Dimensions:</strong> 70 x 60 x 25 mm.</li>
-				<li><strong>Documentation :</strong> <a href="http://www.pishrobot.com/files/products/datasheets/md25.pdf" target="_blank">MD25 - Dual 12Volt 2.8Amp H Bridge Motor Drive</a></li>
-				<li><strong>Distributeur :</strong> <a href="http://www.lextronic.fr/P3104-module-de-commande-de-moteur-md25.html" target="_blank">Lextronic</a></li>
+				<li>
+					<strong>Présentation</strong>
+				</li>
+				<p>Destinée à être commandée par un microcontrôleur au moyen d'une liaison série (niveau logique 0 - 5 V) ou via un
+					<strong>bus I2C™</strong>, cette platine électronique intègre un
+					<strong>double pont en "H"</strong> permettant le pilotage indépendant de
+					<strong>2 moteurs à courant continu avec encodeur</strong> (consommation: 2,5 A max. par moteur).
+					<br> Des ordres simples permettent de définir le sens de rotation ainsi que la vitesse des moteurs, de lire les informations
+					en provenance des encodeurs, de lire les valeurs de la tension et du courant consommé par les moteurs, de connaître
+					leur vitesse de rotation, de définir les accélérations, etc...</p>
+				<p align="center">
+					<img src="images/md25connection.png">
+				</p>
+				<li>
+					<strong>Alimentation :</strong> 12 Vcc (un régulateur 5 Vcc intégré délivre 300 mA pour l’électronique de commande externe).</li>
+				<li>
+					<strong>Possibilités: </strong>Plusieurs platines peuvent être pilotées en même temps via un bus I2C™</li>
+				<li>
+					<strong>Dimensions:</strong> 70 x 60 x 25 mm.</li>
+				<li>
+					<strong>Documentation :</strong>
+					<a href="http://www.pishrobot.com/files/products/datasheets/md25.pdf" target="_blank">MD25 - Dual 12Volt 2.8Amp H Bridge Motor Drive</a>
+				</li>
+				<li>
+					<strong>Distributeur :</strong>
+					<a href="http://www.lextronic.fr/P3104-module-de-commande-de-moteur-md25.html" target="_blank">Lextronic</a>
+				</li>
 			</ul>
 			<hr>
 
@@ -79,70 +114,123 @@
 			<h5>Secret Labs</h5>
 			<hr>
 			<ul>
-				<li><strong>Microcontrôleur</strong> : STM32F405RG 32 bits à architecture Cortex-M4 cadencé à 168 MHz.</li>
-				<li><strong>RAM</strong> : 164KB+.</li>
-				<li><strong>Flash</strong> : 1408KB.</li>
-				<li><strong>Port Ethernet : </strong> 10/100Mbps (Wifi:802.11b/g/n)*.</li>
-				<li><strong>E/S numériques</strong> : 22</li>
-				<li><strong>Entrées analogiques</strong> : 6</li>
-				<li><strong>Stockage</strong>: carte µSD</li>
-				<li><strong>IDE</strong> : Microsoft Visual Studio</li>
-				<li><strong>Framework</strong> : .NETMF 4.3</li>
-				<li><strong>Langages de programmation</strong> : C#, VB</li>
-				<li><strong>Compatibilité</strong> : shield Arduino, Gadgeteer</li>
+				<li>
+					<strong>Microcontrôleur</strong> : STM32F405RG 32 bits à architecture Cortex-M4 cadencé à 168 MHz.</li>
+				<li>
+					<strong>RAM</strong> : 164KB+.</li>
+				<li>
+					<strong>Flash</strong> : 1408KB.</li>
+				<li>
+					<strong>Port Ethernet : </strong> 10/100Mbps (Wifi:802.11b/g/n)*.</li>
+				<li>
+					<strong>E/S numériques</strong> : 22</li>
+				<li>
+					<strong>Entrées analogiques</strong> : 6</li>
+				<li>
+					<strong>Stockage</strong>: carte µSD</li>
+				<li>
+					<strong>IDE</strong> : Microsoft Visual Studio</li>
+				<li>
+					<strong>Framework</strong> : .NETMF 4.3</li>
+				<li>
+					<strong>Langages de programmation</strong> : C#, VB</li>
+				<li>
+					<strong>Compatibilité</strong> : shield Arduino, Gadgeteer</li>
 			</ul>
 			<table>
 				<tr>
-					<td><img src="images/netduino3ethernet.png" alt="Netduino plus 2" target="_blank" /></td>
-					<td><img src="images/inputandoutput.png" alt="Netduino 3 wifi" target="_blank" /></td>
+					<td>
+						<img src="images/netduino3ethernet.png" alt="Netduino plus 2" target="_blank" />
+					</td>
+					<td>
+						<img src="images/inputandoutput.png" alt="Netduino 3 wifi" target="_blank" />
+					</td>
 				</tr>
 				<tr>
-					<td align="center"><strong>Netduino 3 Ethernet</strong></td>
-					<td align="center"><strong>Netduino 3 wifi*</strong></td>
+					<td align="center">
+						<strong>Netduino 3 Ethernet</strong>
+					</td>
+					<td align="center">
+						<strong>Netduino 3 wifi*</strong>
+					</td>
 				</tr>
 			</table>
 
 			<ul>
-				<li><strong>Sites à consulter</strong> : <a href="http://netduino.com/netduinoplus2/specs.htm" target="_blank">Netduino</a></li>
-				<li><strong>Distributeurs</strong> : <a href="http://www.mouser.fr/Search/Refine.aspx?Keyword=netduino" target="_blank">Mouser Electronics</a></li>
+				<li>
+					<strong>Sites à consulter</strong> :
+					<a href="https://www.wildernesslabs.co/" target="_blank">Netduino</a>
+				</li>
+				<li>
+					<strong>Distributeurs</strong> :
+					<a href="http://www.mouser.fr/Search/Refine.aspx?Keyword=netduino" target="_blank">Mouser Electronics</a>
+				</li>
 			</ul>
 			<hr>
 
 			<h4 id="FEZ">
 				<a name="carte-netduino-de-secret-labs" class="anchor" href="#carte-netduino-de-secret-labs" target="_blank">
-					<span class="octicon octicon-link"></span></a>1.3 Les cartes FEZ</h4>
+					<span class="octicon octicon-link"></span>
+				</a>1.3 Les cartes FEZ</h4>
 			<h5>GHI Electonics (Extrait)</h5>
 			<hr>
 			<ul>
-				<li><strong>Microcontrôleur</strong> : 180 MHz 32-bit ARM Cortex-M4.(120 MHz 32-bit ARM Cortex-M3 )*</li>
-				<li><strong>SoC(SoM)*</strong> : <a href="https://www.ghielectronics.com/catalog/product/501" target="_blank">G80</a>
-					<a href="https://www.ghielectronics.com/catalog/product/373" target="_blank">G120*</a>
+				<li>
+					<strong>Microcontrôleur</strong> : 180 MHz 32-bit ARM Cortex-M4.(120 MHz 32-bit ARM Cortex-M3 )*</li>
+				<li>
+					<strong>SoC(SoM)*</strong> :
+					<a href="https://www.ghielectronics.com/products/scm/g80" target="_blank">G80</a>
+					<a href="https://www.ghielectronics.com/products/scm/g120e" target="_blank">G120*</a>
 				</li>
-				<li><strong>RAM</strong> : 156 KB(2.87 MB)*.</li>
-				<li><strong>Flash</strong> : 256 KB (13.67 MB)*.</li>
-				<li><strong>E/S numériques</strong> : 53(60)*</li>
-				<li><strong>Entrées analogiques</strong> : 16(8)*</li>
-				<li><strong>Réseaux : </strong> Ethernet TCP/IP, WiFi, and SSL.</li>
-				<li><strong>Stockage</strong>: carte µSD</li>
-				<li><strong>IDE</strong> : Microsoft Visual Studio</li>
-				<li><strong>Framework</strong> : .NETMF 4.3</li>
-				<li><strong>Langages de programmation</strong> : C#, VB</li>
+
+				<li>
+					<strong>RAM</strong> : 156 KB(2.87 MB)*.</li>
+				<li>
+					<strong>Flash</strong> : 256 KB (13.67 MB)*.</li>
+				<li>
+					<strong>E/S numériques</strong> : 53(60)*</li>
+				<li>
+					<strong>Entrées analogiques</strong> : 16(8)*</li>
+				<li>
+					<strong>Réseaux : </strong> Ethernet TCP/IP, WiFi, and SSL.</li>
+				<li>
+					<strong>Stockage</strong>: carte µSD</li>
+				<li>
+					<strong>IDE</strong> : Microsoft Visual Studio</li>
+				<li>
+					<strong>Framework</strong> : .NETMF 4.3</li>
+				<li>
+					<strong>Langages de programmation</strong> : C#, VB</li>
 			</ul>
 
 			<table>
 				<tr>
-					<td><img src="images/panda3.png" alt="PANDA III" /></td>
-					<td><img src="images/cobra3.png" alt="COBRA III" /></td>
+					<td>
+						<img src="images/panda3.png" alt="PANDA III" />
+					</td>
+					<td>
+						<img src="images/cobra3.png" alt="COBRA III" />
+					</td>
 				</tr>
 				<tr>
-					<td align="center"><strong>PANDA III</strong></td>
-					<td align="center"><strong>COBRA III* (compatible Gadgeteer)</strong></td>
+					<td align="center">
+						<strong>PANDA III</strong>
+					</td>
+					<td align="center">
+						<strong>COBRA III* (compatible Gadgeteer)</strong>
+					</td>
 				</tr>
 			</table>
 
 			<ul>
-				<li><strong>Sites à consulter</strong> : <a href="https://www.ghielectronics.com/" target="_blank">GHI ELECTRONICS</a></li>
-				<li><strong>Distributeurs</strong> : <a href="http://www.mouser.fr" target="_blank">Mouser Electronics</a></li>
+				<li>
+					<strong>Sites à consulter</strong> :
+					<a href="https://www.ghielectronics.com/" target="_blank">GHI ELECTRONICS</a>
+				</li>
+				<li>
+					<strong>Distributeurs</strong> :
+					<a href="http://www.mouser.fr" target="_blank">Mouser Electronics</a>
+				</li>
 			</ul>
 
 			<hr>
@@ -150,61 +238,106 @@
 			<hr>
 
 			<h4 id="REP">2.1 Contenu du répertoire proposé au téléchargement</h4>
-			<p>Le répertoire proposé au téléchargement (au format zip ou tar.gz) contient la solution <strong>NetduinoMD25</strong> composée:</p>
+			<p>Le répertoire proposé au téléchargement (au format zip ou tar.gz) contient la solution
+				<strong>NetduinoMD25</strong> composée:</p>
 			<ul>
-				<li>Du projet <strong>MD25 </strong>: le <strong>code source</strong> de la classe <em>MotorControlMD2x</em>.</li>
-				<li>Du projet <strong>Netduino </strong>: un exemple d'utilisation de cette classe avec une carte Netduino.</li>
-				<li>Du projet <strong>FezPanda </strong>: un exemple d'utilisation de cette classe avec une carte Panda.</li>
+				<li>Du projet
+					<strong>MD25 </strong>: le
+					<strong>code source</strong> de la classe
+					<em>MotorControlMD2x</em>.</li>
+				<li>Du projet
+					<strong>Netduino </strong>: un exemple d'utilisation de cette classe avec une carte Netduino.</li>
+				<li>Du projet
+					<strong>FezPanda </strong>: un exemple d'utilisation de cette classe avec une carte Panda.</li>
 			</ul>
 			<hr>
 
 			<h4 id="NUGET">2.2 Le NuGet MicroToolsKit</h4>
-			<p>La dernière version <strong>compilée</strong> de la classe <strong>MotorControlMD2x</strong> se situe dans la bibliothèque
-				<strong>MicroToolsKit</strong> disponible sur <a href="https://www.nuget.org/packages/WebGE.MicroToolsKit/" target="_blank">nuget.org</a>.</p>
-			<p align="center"><img src="images/NuGet-large.png" /></p>
-			<p><strong>Organisation des classes</strong> contenues dans MicroToolsKit <a href="http://webge.dyndns-server.com/dokuwiki/doku.php?id=netmf43:6_microtoolskit"
-				 target="_blank">[lien]</a></p>
-			<p><em><strong>Important</strong> : Installer ce nuget dans le projet Visual Studio simplifie l'utilisation de la classe.</em></p>
+			<p>La dernière version
+				<strong>compilée</strong> de la classe
+				<strong>MotorControlMD2x</strong> se situe dans la bibliothèque
+				<strong>MicroToolsKit</strong> disponible sur
+				<a href="https://www.nuget.org/packages/WebGE.MicroToolsKit/" target="_blank">nuget.org</a>.</p>
+			<p align="center">
+				<img src="images/NuGet-large.png" />
+			</p>
+			<p>
+				<strong>Organisation des classes</strong> contenues dans MicroToolsKit
+				<a href="http://webge.dyndns-server.com/dokuwiki/doku.php?id=netmf43:6_microtoolskit" target="_blank">[lien]</a>
+			</p>
+			<p>
+				<em>
+					<strong>Important</strong> : Installer ce nuget dans le projet Visual Studio simplifie l'utilisation de la classe.</em>
+			</p>
 			<hr>
 
 			<h4 id="WIKI">2.3 Le wiki .NetMF v4.3</h4>
 			<ul>
-				Un wiki est dédié au <strong>microframework .Net v4.3</strong>. Il propose au téléchargement : 
-<li>Des <strong>exemples</strong> de code pour les cartes <strong>Netduino</strong>, <strong>GHI FEZ (Panda 3 , BrainPadetc) </strong>. <a href=" http://webge.dyndns-server.com/dokuwiki/doku.php?id=netmf43:accueilnetmf"  target="_blank">[lien]</a></li>
+				Un wiki est dédié au
+				<strong>microframework .Net v4.3</strong>. Il propose au téléchargement :
+				<li>Des
+					<strong>exemples</strong> de code pour les cartes
+					<strong>Netduino</strong>,
+					<strong>GHI FEZ (Panda 3 , BrainPadetc) </strong>.
+					<a href=" http://webge.dyndns-server.com/dokuwiki/doku.php?id=netmf43:accueilnetmf" target="_blank">[lien]</a>
+				</li>
 
 			</ul>
 			<hr>
 
 			<h4 id="DESC">2.4 Description et utilisation de la classe MD2x</h4>
 			<ul>
-				<li><strong>Rôle: </strong>Contrôler deux motoréducteurs équipés d'un encodeur via le bus I²C.</li>
-				<li><strong>Assembly: </strong> <em>MicroToolsKit</em> (disponible sur
+				<li>
+					<strong>Rôle: </strong>Contrôler deux motoréducteurs équipés d'un encodeur via le bus I²C.</li>
+				<li>
+					<strong>Assembly: </strong>
+					<em>MicroToolsKit</em> (disponible sur
 					<a href="https://www.nuget.org/packages/WebGE.MicroToolsKit/" target="_blank">nuget.org</a>)</li>
-				<li><strong>Espace de noms: </strong><em>Microtoolskit.Hardware.MotorDrivers</em></li>
+				<li>
+					<strong>Espace de noms: </strong>
+					<em>Microtoolskit.Hardware.MotorDrivers</em>
+				</li>
 			</ul>
 
 			<hr/>
-			<p><strong>Création d'un projet avec l'IDE Visual Studio</strong></p>
+			<p>
+				<strong>Création d'un projet avec l'IDE Visual Studio</strong>
+			</p>
 			<ol>
 				<li>
-          <strong>Créer </strong>un nouveau projet en suivant la démarche décrite dans le chapitre
-          <em>"Premier programme en C# étape par étape"</em> avec à une carte <strong>Netduino</strong> ou avec une carte
-          <strong>Fez (Panda 3, BrainPad etc)</strong>.
-          <a href=" http://webge.dyndns-server.com/dokuwiki/doku.php?id=netmf43:accueilnetmf " target="_blank">[lien]</a>
-</li>
-
-				<li><strong>Utiliser</strong> le gestionnaire de paquets NuGet pour <strong>ajouter</strong> la bibliothèque <strong>MicroToolsKit</strong>					(
-					<a href="https://www.nuget.org/packages/WebGE.MicroToolsKit/ " target="_blank ">nuget.org</a>) dans le projet. (Dans
-					l'explorateur de solution, clic droit sur les <em>Références</em> du projet puis choisir <em>Gérer les packages NuGet...</em>.<strong> Installer</strong>					le paquet.)</li>
-				<li><strong>Ajouter</strong> l'espace de noms <strong>Microtoolskit.Hardware.MotorDrivers</strong> dans l'en-tête du fichier
-					source.
+					<strong>Créer </strong>un nouveau projet en suivant la démarche décrite dans le chapitre
+					<em>"Premier programme en C# étape par étape"</em> avec à une carte
+					<strong>Netduino</strong> ou avec une carte
+					<strong>Fez (Panda 3, BrainPad etc)</strong>.
+					<a href=" http://webge.dyndns-server.com/dokuwiki/doku.php?id=netmf43:accueilnetmf " target="_blank">[lien]</a>
 				</li>
-				<li><strong>Créer</strong> un objet en utilisant un des constructeurs MotorControlMD2x.</li>
-				<li><strong>Régler</strong> la fréquence de rotation des moteurs avec la méthode <strong>SetSpeedTurn.</strong></li>
-				<li><strong>etc...</strong></li>
+
+				<li>
+					<strong>Utiliser</strong> le gestionnaire de paquets NuGet pour
+					<strong>ajouter</strong> la bibliothèque
+					<strong>MicroToolsKit</strong> (
+					<a href="https://www.nuget.org/packages/WebGE.MicroToolsKit/ " target="_blank ">nuget.org</a>) dans le projet. (Dans l'explorateur de solution, clic droit sur les
+					<em>Références</em> du projet puis choisir
+					<em>Gérer les packages NuGet...</em>.
+					<strong> Installer</strong> le paquet.)</li>
+				<li>
+					<strong>Ajouter</strong> l'espace de noms
+					<strong>Microtoolskit.Hardware.MotorDrivers</strong> dans l'en-tête du fichier source.
+				</li>
+				<li>
+					<strong>Créer</strong> un objet en utilisant un des constructeurs MotorControlMD2x.</li>
+				<li>
+					<strong>Régler</strong> la fréquence de rotation des moteurs avec la méthode
+					<strong>SetSpeedTurn.</strong>
+				</li>
+				<li>
+					<strong>etc...</strong>
+				</li>
 			</ol>
 			<hr>
-			<p><strong>Exemple</strong></p>
+			<p>
+				<strong>Exemple</strong>
+			</p>
 			<pre>
 using System;
 using System.Threading;
@@ -246,82 +379,162 @@ namespace NetduinoMD25
 }
       		</pre>
 			<hr>
-			<p><strong>Constructeurs</strong></p>
+			<p>
+				<strong>Constructeurs</strong>
+			</p>
 			<table>
 				<tr>
 					<td></td>
-					<td><strong>Syntaxe</strong></td>
-					<td><strong>Description</strong></td>
+					<td>
+						<strong>Syntaxe</strong>
+					</td>
+					<td>
+						<strong>Description</strong>
+					</td>
 				</tr>
 				<tr>
-					<td><img src="images/Method_16x.png"></td>
-					<td><strong>MotorControlMD2x()</strong></td>
-					<td>Instancie un objet "MD25". <br> <strong>SLA</strong> = 0x58 (par défaut). <br><strong>Frequency</strong> : fréquence
-						du bus I²C = 100kHz (par défaut) <br><br>
-						<strong>Exemple</strong><br>
+					<td>
+						<img src="images/Method_16x.png">
+					</td>
+					<td>
+						<strong>MotorControlMD2x()</strong>
+					</td>
+					<td>Instancie un objet "MD25".
+						<br>
+						<strong>SLA</strong> = 0x58 (par défaut).
+						<br>
+						<strong>Frequency</strong> : fréquence du bus I²C = 100kHz (par défaut)
+						<br>
+						<br>
+						<strong>Exemple</strong>
+						<br>
 						<em>var MD25 = new MotorControlMD2x();</em>
 					</td>
 				</tr>
 				<tr>
-					<td><img src="images/Method_16x.png"></td>
-					<td><strong>MotorControlMD2x</strong>(<strong>UInt16</strong> <em>SLA</em>)</td>
-					<td>Instancie un objet "MD25". <br><strong>SLA</strong>: à définir dans l'intervalle [0x58,0x5F]. <br><strong>Frequency</strong>:
-						fréquence du bus I²C = 100kHz<br><br>
-						<strong>Exemple</strong><br>
+					<td>
+						<img src="images/Method_16x.png">
+					</td>
+					<td>
+						<strong>MotorControlMD2x</strong>(
+						<strong>UInt16</strong>
+						<em>SLA</em>)</td>
+					<td>Instancie un objet "MD25".
+						<br>
+						<strong>SLA</strong>: à définir dans l'intervalle [0x58,0x5F].
+						<br>
+						<strong>Frequency</strong>: fréquence du bus I²C = 100kHz
+						<br>
+						<br>
+						<strong>Exemple</strong>
+						<br>
 						<em>var MD25 = new MotorControlMD2x(0x59);</em>
 					</td>
 				</tr>
 				<tr>
-					<td><img src="images/Method_16x.png"></td>
-					<td><strong>MotorControlMD2x</strong>(<strong>UInt16</strong> <em>SLA</em>, <strong>UInt16</strong> <em>Frequency</em>)</td>
-					<td>Instancie un objet "MD25". <br> <strong>SLA</strong>: à définir dans l'intervalle [0x58,0x5F]. <br><strong>Frequency</strong>:
-						fréquence du bus I²C à définir dans l'intervalle [100kHz,400kHz]. <br><br>
-						<strong>Exemple</strong><br>
+					<td>
+						<img src="images/Method_16x.png">
+					</td>
+					<td>
+						<strong>MotorControlMD2x</strong>(
+						<strong>UInt16</strong>
+						<em>SLA</em>,
+						<strong>UInt16</strong>
+						<em>Frequency</em>)</td>
+					<td>Instancie un objet "MD25".
+						<br>
+						<strong>SLA</strong>: à définir dans l'intervalle [0x58,0x5F].
+						<br>
+						<strong>Frequency</strong>: fréquence du bus I²C à définir dans l'intervalle [100kHz,400kHz].
+						<br>
+						<br>
+						<strong>Exemple</strong>
+						<br>
 						<em>var MD25 = new MotorControlMD2x(0x58,200);</em>
 					</td>
 				</tr>
 			</table>
 
-			<p><strong>Enumérations</strong></p>
+			<p>
+				<strong>Enumérations</strong>
+			</p>
 			<table>
 				<tr>
 					<td></td>
-					<td><strong>Syntaxe</strong></td>
-					<td><strong>Description</strong></td>
+					<td>
+						<strong>Syntaxe</strong>
+					</td>
+					<td>
+						<strong>Description</strong>
+					</td>
 				</tr>
 				<tr>
-					<td><img src="images/Enumerator_16x.png"></td>
-					<td><strong>ModeRegister</strong></td>
 					<td>
-						<strong>Mode 0, Mode 1</strong><br>Commande indépendante des deux moteurs.<br>- Speed 1 règle la vitesse du moteur
-						1. <br> - Speed 2 règle la vitesse du moteur 2.<br><br>
-						<strong>Mode 2, Mode 3</strong><br>- Le registre Speed1 définit la vitesse médiane des deux moteurs. <br>- Le registre Speed2Turn définit le diférentiel
-						de vitesse à appliquer en + ou en - à chaque moteur (voir la propriété Speed2).<br><br> Effet des paramètres de la méthode SetSpeedTurn : ValSpeed1
-						et ValSpeed2 ou des propriétés Speed1 et Speed2Turn dans les différents modes. <br>
+						<img src="images/Enumerator_16x.png">
+					</td>
+					<td>
+						<strong>ModeRegister</strong>
+					</td>
+					<td>
+						<strong>Mode 0, Mode 1</strong>
+						<br>Commande indépendante des deux moteurs.
+						<br>- Speed 1 règle la vitesse du moteur 1.
+						<br> - Speed 2 règle la vitesse du moteur 2.
+						<br>
+						<br>
+						<strong>Mode 2, Mode 3</strong>
+						<br>- Le registre Speed1 définit la vitesse médiane des deux moteurs.
+						<br>- Le registre Speed2Turn définit le diférentiel de vitesse à appliquer en + ou en - à chaque moteur (voir la propriété
+						Speed2).
+						<br>
+						<br> Effet des paramètres de la méthode SetSpeedTurn : ValSpeed1 et ValSpeed2 ou des propriétés Speed1 et Speed2Turn dans
+						les différents modes.
+						<br>
 						<ul>
-							<li><strong>Mode 0 </strong>(par défaut) <br> 0 (Full Reverse) 128 (Stop) 255 (Full Forward)</li>
-							<li><strong>Mode 1</strong><br> -128 (Full Reverse) 0 (Stop) 127 (Full Forward).</li>
-							<li><strong>Mode 2</strong><br> 0 (Full Reverse) 128 (Stop) 255 (Full Forward)</li>
-							<li><strong>Mode 3</strong><br> -128 (Full Reverse) 0 (Stop) 127 (Full Forward)</li>
+							<li>
+								<strong>Mode 0 </strong>(par défaut)
+								<br> 0 (Full Reverse) 128 (Stop) 255 (Full Forward)</li>
+							<li>
+								<strong>Mode 1</strong>
+								<br> -128 (Full Reverse) 0 (Stop) 127 (Full Forward).</li>
+							<li>
+								<strong>Mode 2</strong>
+								<br> 0 (Full Reverse) 128 (Stop) 255 (Full Forward)</li>
+							<li>
+								<strong>Mode 3</strong>
+								<br> -128 (Full Reverse) 0 (Stop) 127 (Full Forward)</li>
 						</ul>
 					</td>
 				</tr>
 			</table>
 
-			<p><strong>Propriétés</strong></p>
+			<p>
+				<strong>Propriétés</strong>
+			</p>
 			<table>
 				<tr>
 					<td></td>
-					<td><strong>Syntaxe</strong></td>
-					<td><strong>Description</strong></td>
+					<td>
+						<strong>Syntaxe</strong>
+					</td>
+					<td>
+						<strong>Description</strong>
+					</td>
 				</tr>
 				<tr>
-					<td><img src="images/Property_20x.png"></td>
-					<td><strong>Speed1</strong></td>
 					<td>
-						Fixe (à venir) ou retourne la consigne de vitesse du moteur 1 (mode 0, 1) ou des deux moteurs (mode 2,3). <br>Type : byte
-						<br><br>
-						<strong>Note</strong><br>
+						<img src="images/Property_20x.png">
+					</td>
+					<td>
+						<strong>Speed1</strong>
+					</td>
+					<td>
+						Fixe (à venir) ou retourne la consigne de vitesse du moteur 1 (mode 0, 1) ou des deux moteurs (mode 2,3).
+						<br>Type : byte
+						<br>
+						<br>
+						<strong>Note</strong>
+						<br>
 						<ul>
 							<li>
 								Dans les modes 0 et 1, il règle la vitesse du moteur 1. Plus la valeur augmente, plus la fréquence de rotation augmente.
@@ -331,156 +544,294 @@ namespace NetduinoMD25
 							</li>
 						</ul>
 						<br>
-						<strong>Exemples</strong><br> // Pour connaître la consigne de vitesse du moteur 1 <br>
-						<em>Debug.Print("Speed1=" + MD25.Speed1.ToString());</em><br><br> // Pour fixer la consigne de vitesse du moteur 1
-						(mode 0) <br>
+						<strong>Exemples</strong>
+						<br> // Pour connaître la consigne de vitesse du moteur 1
+						<br>
+						<em>Debug.Print("Speed1=" + MD25.Speed1.ToString());</em>
+						<br>
+						<br> // Pour fixer la consigne de vitesse du moteur 1 (mode 0)
+						<br>
 						<em>MD25.Speed1 = 140;</em>
 					</td>
 				</tr>
 				<tr>
-					<td><img src="images/Property_20x.png"></td>
-					<td><strong>Speed2Turn</strong></td>
 					<td>
-						Fixe (à venir) ou retourne la consigne de vitesse du moteur 2 (mode 0, 1) ou la consigne de direction du système déplacé par les deux moteurs (mode 2,3 : Turn).
+						<img src="images/Property_20x.png">
+					</td>
+					<td>
+						<strong>Speed2Turn</strong>
+					</td>
+					<td>
+						Fixe (à venir) ou retourne la consigne de vitesse du moteur 2 (mode 0, 1) ou la consigne de direction du système déplacé
+						par les deux moteurs (mode 2,3 : Turn).
 						<br>Type : byte
-						<br><br>
-						<strong>Note sur le mode Turn</strong><br> Selon la valeur du registre de vitesse (Speed1), le logiciel de la carte
-						MD25 détermine si la direction est directe ou inverse. <br>
+						<br>
+						<br>
+						<strong>Note sur le mode Turn</strong>
+						<br> Selon la valeur du registre de vitesse (Speed1), le logiciel de la carte MD25 détermine si la direction est directe
+						ou inverse.
+						<br>
 						<ul>
-							<li>Si la direction est directe : <br> - La vitesse du moteur 1 = speed - turn <br> - La vitesse du moteur 2 = speed +
-								turn
+							<li>Si la direction est directe :
+								<br> - La vitesse du moteur 1 = speed - turn
+								<br> - La vitesse du moteur 2 = speed + turn
 							</li>
-							<li>Si la direction est inverse : <br> - La vitesse du moteur 1 = speed + turn <br> - La vitesse du moteur 2 = speed -
-								turn
+							<li>Si la direction est inverse :
+								<br> - La vitesse du moteur 1 = speed + turn
+								<br> - La vitesse du moteur 2 = speed - turn
 							</li>
 						</ul>
-						<strong>Exemples</strong><br> // Pour connaître la consigne de vitesse du moteur 2 <br>
-						<em>Debug.Print("Speed2=" + MD25.Speed2Turn.ToString());</em><br><br>
-						// Pour fixer la consigne de direction <br>
-						A venir
+						<strong>Exemples</strong>
+						<br> // Pour connaître la consigne de vitesse du moteur 2
+						<br>
+						<em>Debug.Print("Speed2=" + MD25.Speed2Turn.ToString());</em>
+						<br>
+						<br> // Pour fixer la consigne de direction
+						<br> A venir
 
 					</td>
 				</tr>
 				<tr>
-					<td><img src="images/Property_20x.png"></td>
-					<td><strong>Encoder1</strong></td>
-					<td>Retourne la valeur de l'encodeur 1 (calculée à partir des registres Enc1a,b,c et d). <br>Type : Int32<br><br>
-						<strong>Exemple</strong><br>
+					<td>
+						<img src="images/Property_20x.png">
+					</td>
+					<td>
+						<strong>Encoder1</strong>
+					</td>
+					<td>Retourne la valeur de l'encodeur 1 (calculée à partir des registres Enc1a,b,c et d).
+						<br>Type : Int32
+						<br>
+						<br>
+						<strong>Exemple</strong>
+						<br>
 						<em>Debug.Print("Codeur 1=" + MD25.Encoder1.ToString());</em>
 					</td>
 				</tr>
 				<tr>
-					<td><img src="images/Property_20x.png"></td>
-					<td><strong>Encoder2</strong></td>
-					<td>Retourne la valeur de l'encodeur 2 (calculée à partir des registres Enc2a,b,c et d). <br>Type : Int32<br><br>
-						<strong>Exemple</strong><br>
+					<td>
+						<img src="images/Property_20x.png">
+					</td>
+					<td>
+						<strong>Encoder2</strong>
+					</td>
+					<td>Retourne la valeur de l'encodeur 2 (calculée à partir des registres Enc2a,b,c et d).
+						<br>Type : Int32
+						<br>
+						<br>
+						<strong>Exemple</strong>
+						<br>
 						<em>Debug.Print("Codeur 2=" + MD25.Encoder2.ToString());</em>
 					</td>
 				</tr>
 				<tr>
-					<td><img src="images/Property_20x.png"></td>
-					<td><strong>Battery</strong></td>
-					<td>Retourne la tension d'alimentation (x10) de la carte en (V). <br>Type : byte<br><br>
-						<strong>Exemple</strong><br>
+					<td>
+						<img src="images/Property_20x.png">
+					</td>
+					<td>
+						<strong>Battery</strong>
+					</td>
+					<td>Retourne la tension d'alimentation (x10) de la carte en (V).
+						<br>Type : byte
+						<br>
+						<br>
+						<strong>Exemple</strong>
+						<br>
 						<em>Debug.Print("Tension=" + ((Single)MD25.Battery / 10).ToString("F1") + "V");</em>
 					</td>
 				</tr>
 				<tr>
-					<td><img src="images/Property_20x.png"></td>
-					<td><strong>Current1</strong></td>
-					<td>Retourne l'intensité du moteur 1 (x10) en (A). <br>Type : byte<br><br>
-						<strong>Exemple</strong><br>
+					<td>
+						<img src="images/Property_20x.png">
+					</td>
+					<td>
+						<strong>Current1</strong>
+					</td>
+					<td>Retourne l'intensité du moteur 1 (x10) en (A).
+						<br>Type : byte
+						<br>
+						<br>
+						<strong>Exemple</strong>
+						<br>
 						<em>Debug.Print("I_moteur 1=" + ((Single)MD25.Current1 / 10).ToString("F1") + "A");</em>
 					</td>
 				</tr>
 				<tr>
-					<td><img src="images/Property_20x.png"></td>
-					<td><strong>Current2</strong></td>
-					<td>Retourne l'intensité du moteur 2 (x10) en (A). <br>Type : byte<br><br>
-						<strong>Exemple</strong><br>
+					<td>
+						<img src="images/Property_20x.png">
+					</td>
+					<td>
+						<strong>Current2</strong>
+					</td>
+					<td>Retourne l'intensité du moteur 2 (x10) en (A).
+						<br>Type : byte
+						<br>
+						<br>
+						<strong>Exemple</strong>
+						<br>
 						<em>Debug.Print("I_moteur 2=" + ((Single)MD25.Current2 / 10).ToString("F1") + "A");</em>
 					</td>
 				</tr>
 				<tr>
-					<td><img src="images/Property_20x.png"></td>
-					<td><strong>SoftRev</strong></td>
-					<td>Retourne le numéro de version du logiciel de la carte MD25. <br>Type : byte<br><br>
-						<strong>Exemple</strong><br>
+					<td>
+						<img src="images/Property_20x.png">
+					</td>
+					<td>
+						<strong>SoftRev</strong>
+					</td>
+					<td>Retourne le numéro de version du logiciel de la carte MD25.
+						<br>Type : byte
+						<br>
+						<br>
+						<strong>Exemple</strong>
+						<br>
 						<em>Debug.Print("Vers.=" + MD25.SoftRev.ToString());</em>
 					</td>
 				</tr>
 				<tr>
-					<td><img src="images/Property_20x.png"></td>
-					
-					<td><strong>AccelerationRate</strong></td>
-					<td>En cours de rédaction <br> Fixe ou retourne l'accélération programmée lors d'un changement de vitesse. <br>Type : byte<br><br>
-						<strong>Exemples</strong><br> // Pour connaître la valeur de l'accélération <br>
-						<em>Debug.Print("Acceleration=" + MD25.AccelerationRate.ToString());</em> <br><br> // Pour fixer la valeur de l'accélération
+					<td>
+						<img src="images/Property_20x.png">
+					</td>
+
+					<td>
+						<strong>AccelerationRate</strong>
+					</td>
+					<td>En cours de rédaction
+						<br> Fixe ou retourne l'accélération programmée lors d'un changement de vitesse.
+						<br>Type : byte
+						<br>
+						<br>
+						<strong>Exemples</strong>
+						<br> // Pour connaître la valeur de l'accélération
+						<br>
+						<em>Debug.Print("Acceleration=" + MD25.AccelerationRate.ToString());</em>
+						<br>
+						<br> // Pour fixer la valeur de l'accélération
 						<br>
 						<em>MD25.AccAccelerationRate = 1;</em>
 					</td>
 				</tr>
 				<tr>
-					<td><img src="images/Property_20x.png"></td>
-					<td><strong>Mode</strong></td>
-					<td>Fixe (à venir) ou retourne le mode de fonctionnement de la carte 0, 1, 2 ou 3. <br>Type : byte<br><br>
-						<strong>Exemples</strong><br> // Pour connaitre le mode de fonctionnement de la carte <br>
-						<em>Debug.Print(Mode=" + MD25.Mode.ToString());</em> <br><br>
-						// Pour fixer le mode de fonctionnement de la carte <br>
+					<td>
+						<img src="images/Property_20x.png">
+					</td>
+					<td>
+						<strong>Mode</strong>
+					</td>
+					<td>Fixe (à venir) ou retourne le mode de fonctionnement de la carte 0, 1, 2 ou 3.
+						<br>Type : byte
+						<br>
+						<br>
+						<strong>Exemples</strong>
+						<br> // Pour connaitre le mode de fonctionnement de la carte
+						<br>
+						<em>Debug.Print(Mode=" + MD25.Mode.ToString());</em>
+						<br>
+						<br> // Pour fixer le mode de fonctionnement de la carte
+						<br>
 						<em>MD25.Mode = 2;</em>
 					</td>
 				</tr>
 				<tr>
-					<td><img src="images/Property_20x.png"></td>
-					<td><strong>Command</strong></td>					
-					<td>En cours de rédaction <br> Fixe ou retourne le contenu du registre de commande. <br>Type : byte<br><br>
-						<strong>Exemple</strong><br>
+					<td>
+						<img src="images/Property_20x.png">
+					</td>
+					<td>
+						<strong>Command</strong>
+					</td>
+					<td>En cours de rédaction
+						<br> Fixe ou retourne le contenu du registre de commande.
+						<br>Type : byte
+						<br>
+						<br>
+						<strong>Exemple</strong>
+						<br>
 						<em>Debug.Print("" + );</em>
 					</td>
 				</tr>
 				<tr>
-					<td><img src="images/Property_20x.png"></td>
-					<td><strong>TransactionTimeOut</strong></td>
-					<td>Fixe ou retourne le temps (en ms) accordé à la transaction avant la génération d'une exception System.IO.Exception. 1000ms par
-						défaut. <br> Type : ushort
-						<br><br>
-						<strong>Exemples</strong><br> // Pour régler la durée maximum d'une transaction à 200ms. <br>
-						<em>MD25.TransactionTimeOut = 200; </em> <br> // Pour connaître la durée maximum accordée à une transaction <br>
+					<td>
+						<img src="images/Property_20x.png">
+					</td>
+					<td>
+						<strong>TransactionTimeOut</strong>
+					</td>
+					<td>Fixe ou retourne le temps (en ms) accordé à la transaction avant la génération d'une exception System.IO.Exception.
+						1000ms par défaut.
+						<br> Type : ushort
+						<br>
+						<br>
+						<strong>Exemples</strong>
+						<br> // Pour régler la durée maximum d'une transaction à 200ms.
+						<br>
+						<em>MD25.TransactionTimeOut = 200; </em>
+						<br> // Pour connaître la durée maximum accordée à une transaction
+						<br>
 						<em> ushort time = MD25.TransactionTimeOut;</em>
 					</td>
 				</tr>
 			</table>
 
-			<p><strong>Méthodes publiques</strong></p>
+			<p>
+				<strong>Méthodes publiques</strong>
+			</p>
 			<table>
 				<tr>
 					<td></td>
-					<td><strong>Syntaxe</strong></td>
-					<td><strong>Description</strong></td>
+					<td>
+						<strong>Syntaxe</strong>
+					</td>
+					<td>
+						<strong>Description</strong>
+					</td>
 				</tr>
 				<tr>
-					<td><img src="images/Method_16x.png"></td>
-					<td><strong>void GetAllRegister()</strong></td>
+					<td>
+						<img src="images/Method_16x.png">
+					</td>
+					<td>
+						<strong>void GetAllRegister()</strong>
+					</td>
 					<td>Lecture des 16 registres de la carte MD25.</td>
 				</tr>
 				<tr>
-					<td><img src="images/Method_16x.png"></td>
-					<td><strong>void RazEncoders()</strong></td>
+					<td>
+						<img src="images/Method_16x.png">
+					</td>
+					<td>
+						<strong>void RazEncoders()</strong>
+					</td>
 					<td>Remise à zéro des deux encodeurs.</td>
 				</tr>
 				<tr>
-					<td><img src="images/Method_16x.png"></td>
-					<td><strong>void SetMode</strong>(<strong>ModeRegister</strong> <em>valmode</em>)</td>
-					<td>Définit le mode de fonctionnnement de la carte <em>valmode=</em>0, 1,2 ou 3.</td>
+					<td>
+						<img src="images/Method_16x.png">
+					</td>
+					<td>
+						<strong>void SetMode</strong>(
+						<strong>ModeRegister</strong>
+						<em>valmode</em>)</td>
+					<td>Définit le mode de fonctionnnement de la carte
+						<em>valmode=</em>0, 1,2 ou 3.</td>
 				</tr>
 				<tr>
-					<td><img src="images/Method_16x.png"></td>
-					<td><strong>void SetSpeedTurn</strong>(<strong>byte</strong> <em>ValSpeed1</em>, <strong>byte</strong> <em>ValSpeed2Turn</em>)</td>
+					<td>
+						<img src="images/Method_16x.png">
+					</td>
+					<td>
+						<strong>void SetSpeedTurn</strong>(
+						<strong>byte</strong>
+						<em>ValSpeed1</em>,
+						<strong>byte</strong>
+						<em>ValSpeed2Turn</em>)</td>
 					<td>Règle la vitesse des moteurs.</td>
 				</tr>
 				<tr>
-					<td><img src="images/Method_16x.png"></td>
-					<td><strong>void StopMotor()</strong></td>
+					<td>
+						<img src="images/Method_16x.png">
+					</td>
+					<td>
+						<strong>void StopMotor()</strong>
+					</td>
 					<td>Arrêt des deux moteurs.</td>
 				</tr>
 			</table>
@@ -491,8 +842,12 @@ namespace NetduinoMD25
 	<div id="footer_wrap" class="outer">
 		<footer class="inner">
 			<p class="copyright">Description de la classe MD25 développée en C# sous .NETMF 4.3 pour les cartes Netduino, et FEZ (PANDA, COBRA...) maintained
-				by <a href="https://github.com/WebGE">WebGE</a></p>
-			<p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+				by
+				<a href="https://github.com/WebGE">WebGE</a>
+			</p>
+			<p>Published with
+				<a href="http://pages.github.com">GitHub Pages</a>
+			</p>
 		</footer>
 	</div>
 </body>
