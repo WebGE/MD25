@@ -58,7 +58,7 @@ Change I2C address
 
 ## To get started
 
-* [MD25 GitHub Page](http://webge.github.io/MD25/) (French).
+* See [MD25 GitHub Page](http://webge.github.io/MD25/) (French).
 
 ## Feed on Google+
 
