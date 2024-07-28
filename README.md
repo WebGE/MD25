@@ -60,13 +60,10 @@ Change I2C address
 
 * See [MD25 GitHub Page](http://webge.github.io/MD25/) (French).
 
-## Feed on Google+
-
-* [C# embarqué et .NetMF v4.3 : Netduino et GHI FEZ](https://plus.google.com/collection/oaaJX) (French).
 
 ## Wiki
 
-* [C# embarqué et .NetMF v4.3 pour les cartes Netduino et GHI FEZ](http://webge.dyndns-server.com/dokuwiki/doku.php?id=netmf43:accueilnetmf)(French).
+* [C# embarqué et .NetMF v4.3 pour les cartes Netduino et GHI FEZ](http://webge.fr/dokuwiki/doku.php?id=netmf43:accueilnetmf)(French).
 
 ## Project site
 
