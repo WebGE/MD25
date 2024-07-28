@@ -63,7 +63,7 @@ Change I2C address
 
 ## Wiki
 
-* [C# embarqué et .NetMF v4.4 pour les cartes Netduino et GHI FEZ](https://webge.fr/dokuwiki/doku.php?id=archives:netmf43:accueilnetmf)(French).
+* [C# embarqué et .NetMF v4.4 pour les cartes Netduino et GHI FEZ](https://webge.fr/dokuwiki/doku.php?id=archives:netmf43:accueilnetmf) (French).
 
 ## Project site
 
