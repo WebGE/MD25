@@ -17,7 +17,7 @@ This class is also in the [MicroToolsKit](https://www.nuget.org/packages/WEBGE.M
 ## Software
 
 * **Language** : C#
-* **Framework used** : .NETMF 4.3
+* **Framework used** : .NETMF 4.4
 * **IDE** : Visual Studio Community 2015
 * **xml** : documentation inside class  
 * **Exception** : if transaction failed
